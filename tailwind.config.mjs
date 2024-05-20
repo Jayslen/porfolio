@@ -31,6 +31,10 @@ export default {
           950: '#111111',
         },
       },
+      fontFamily: {
+        Satoshi: ['Satoshi', 'sans-serif'],
+      }
+
     },
   },
   plugins: [],
