@@ -1,0 +1,41 @@
+---
+import Section from './Section.astro'
+import BentoItem from './BentoItem.astro'
+import CssLogo from './Icons/CssLogo.astro'
+import HtmlLogo from './Icons/HtmlLogo.astro'
+import JSLogo from './Icons/JSLogo.astro'
+import ReactLogo from './Icons/ReactLogo.astro'
+import TailwindLogo from './Icons/TailwindLogo.astro'
+import ReactRouterDomLogo from './Icons/ReactRouterDomLogo.astro'
+import VitestLogo from './Icons/VitestLogo.astro'
+---
+
+<Section title="Tecnologias">
+  <p>
+    A lo largo de mi camino como auto didacta he aprendido las siguientes
+    Tecnologias:
+  </p>
+  <article class="w-[750px] h-[500px] grid grid-cols-9 grid-rows-9 gap-4">
+    <BentoItem className="row-span-3 col-span-5 hover:bg-[#f48043]">
+      <HtmlLogo />
+    </BentoItem>
+    <BentoItem className="row-span-3 col-span-2 hover:bg-[#6596f5]">
+      <CssLogo />
+    </BentoItem>
+    <BentoItem className="row-span-6 col-span-2 hover:bg-[#ffda43] ">
+      <JSLogo />
+    </BentoItem>
+    <BentoItem className="row-span-3 col-span-2 hover:bg-[#aee6f3]">
+      <ReactLogo />
+    </BentoItem>
+    <BentoItem className="row-span-3 col-span-5 hover:bg-[#8ad0d6]">
+      <TailwindLogo />
+    </BentoItem>
+    <BentoItem className="row-span-3 col-span-6 hover:bg-[#ff9da9]">
+      <ReactRouterDomLogo />
+    </BentoItem>
+    <BentoItem className="row-span-3 col-span-3 hover:bg-[#aed744]">
+      <VitestLogo />
+    </BentoItem>
+  </article>
+</Section>
