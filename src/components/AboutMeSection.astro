@@ -1,0 +1,56 @@
+---
+import CvIcon from './Icons/CvIcon.astro'
+import GithubIcon from './Icons/GithubIcon.astro'
+import LinkedinIcon from './Icons/LinkedinIcon.astro'
+import MailIcon from './Icons/MailIcon.astro'
+import Section from './Section.astro'
+---
+
+<Section title="¿Quien soy?">
+  <article class="my-4 flex gap-3 w-[750px] h-96">
+    <img
+      src="/public/me.png"
+      alt="Persona de pie en la orilla del mar, con el agua tocando sus pies, bajo un cielo parcialmente nublado en la playa."
+      class="rounded w-80 h-full object-cover"
+    />
+    <div class="grid place-content-center">
+      <span>Disponible para trabajar</span>
+      <h3 class="text-xl font-black">
+        Soy, <span
+          class="bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 text-transparent font-black font-Satoshi"
+          >Jayslen Rojas Serrano</span
+        >
+      </h3>
+      <p class="w-full text-pretty">
+        Tengo 19 años y resido en la República Dominicana.
+      </p>
+      <p class="w-full text-pretty">
+        Actualmente no cuento con experiencia laboral,pero he desarrollado
+        sólidos conocimientos en el <strong>desarrollo web</strong>, incluyendo
+        HTML, CSS, JavaScript y diversos frameworks modernos, de manera auto
+        didacta, y creando proyectos personales.
+      </p>
+      <p class="w-full text-pretty">
+        Ademas estoy cursando la carrera de <strong
+          >Desarrollo de Software</strong
+        > en el <strong> Instituto Tecnológico de las Américas (ITLA)</strong>,
+        donde me estoy formando con un enfoque integral en las últimas
+        tendencias y tecnologías del sector.
+      </p>
+      <footer class="flex gap-1">
+        <a href="#">
+          <GithubIcon />
+        </a>
+        <a href="#">
+          <LinkedinIcon />
+        </a>
+        <a href="#">
+          <CvIcon />
+        </a>
+        <a href="#">
+          <MailIcon />
+        </a>
+      </footer>
+    </div>
+  </article>
+</Section>
