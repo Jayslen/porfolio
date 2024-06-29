@@ -7,35 +7,72 @@ import JSLogo from './Icons/JSLogo.astro'
 import ReactLogo from './Icons/ReactLogo.astro'
 import TailwindLogo from './Icons/TailwindLogo.astro'
 import ReactRouterDomLogo from './Icons/ReactRouterDomLogo.astro'
-import VitestLogo from './Icons/VitestLogo.astro'
+import AstroLogo from './Icons/AstroLogo.astro'
+
+const { TEXT } = Astro.props
+const { translation } = Astro.props
+
+const bentoClasses = [
+  {
+    name: 'HTML',
+    logo: HtmlLogo,
+    bento: 'row-span-3 col-span-5',
+    hoverColor: '#f48043',
+  },
+  {
+    name: 'CSS',
+    logo: CssLogo,
+    bento: 'row-span-3 col-span-2',
+    hoverColor: '#6596f5',
+  },
+  {
+    name: 'JavaScript',
+    logo: JSLogo,
+    bento: 'row-span-6 col-span-2',
+    hoverColor: '#ffda43',
+  },
+  {
+    name: 'React',
+    logo: ReactLogo,
+    bento: 'row-span-3 col-span-2',
+    hoverColor: '#aee6f3',
+  },
+  {
+    name: 'Tailwind',
+    logo: TailwindLogo,
+    bento: 'row-span-3 col-span-5',
+    hoverColor: '#8ad0d6',
+  },
+  {
+    name: 'React Router Dom',
+    logo: ReactRouterDomLogo,
+    bento: 'row-span-3 col-span-6',
+    hoverColor: '#ff9da9',
+  },
+  {
+    name: 'Astro',
+    logo: AstroLogo,
+    bento: 'row-span-3 col-span-3',
+    hoverColor: '#ff9532',
+  },
+]
 ---
 
-<Section title="Tecnologias">
+<Section title={translation.TITLE} id="technologies">
   <p>
-    A lo largo de mi camino como auto didacta he aprendido las siguientes
-    Tecnologias:
+    {translation.PARAGRAPH}
   </p>
-  <article class="w-[750px] h-[500px] grid grid-cols-9 grid-rows-9 gap-4">
-    <BentoItem className="row-span-3 col-span-5 hover:bg-[#f48043]">
-      <HtmlLogo />
-    </BentoItem>
-    <BentoItem className="row-span-3 col-span-2 hover:bg-[#6596f5]">
-      <CssLogo />
-    </BentoItem>
-    <BentoItem className="row-span-6 col-span-2 hover:bg-[#ffda43] ">
-      <JSLogo />
-    </BentoItem>
-    <BentoItem className="row-span-3 col-span-2 hover:bg-[#aee6f3]">
-      <ReactLogo />
-    </BentoItem>
-    <BentoItem className="row-span-3 col-span-5 hover:bg-[#8ad0d6]">
-      <TailwindLogo />
-    </BentoItem>
-    <BentoItem className="row-span-3 col-span-6 hover:bg-[#ff9da9]">
-      <ReactRouterDomLogo />
-    </BentoItem>
-    <BentoItem className="row-span-3 col-span-3 hover:bg-[#aed744]">
-      <VitestLogo />
-    </BentoItem>
+  <article class="h-[500px] grid grid-cols-9 grid-rows-9 gap-4">
+    {
+      bentoClasses.map((data) => (
+        <BentoItem
+          className={`${data.bento}`}
+          text={data.name}
+          hoverColor={data.hoverColor}
+        >
+          <data.logo />
+        </BentoItem>
+      ))
+    }
   </article>
 </Section>

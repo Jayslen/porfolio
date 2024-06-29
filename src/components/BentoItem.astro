@@ -1,10 +1,12 @@
 ---
-const { className } = Astro.props
+const { className, text, hoverColor } = Astro.props
 ---
 
 <div
-  class="w-full h-full rounded-md grid place-content-center p-3 transition-all duration-300 bg-cod-gray-200 shadow hover:scale-[0.96]"
+  style={`--hover-color: ${hoverColor};`}
+  class="w-full h-full rounded-md grid place-content-center text-center p-4 transition-all duration-300 hover:bg-[var(--hover-color)] shadow hover:scale-[0.97]"
   class:list={className}
 >
   <slot />
+  <span class="text-sm italic font-Satoshi">{text}</span>
 </div>

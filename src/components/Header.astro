@@ -1,10 +1,17 @@
-<header class="bg-cod-gray-50 w-96 rounded-full py-3 sticky top-7">
+---
+const { translation } = Astro.props
+---
+
+<header class="bg-cod-gray-50 sticky top-5 z-10 rounded-b-lg py-3 w-96 right-0">
   <nav>
     <ul class="flex justify-center gap-4">
-      <li><a href="#">Quien soy</a></li>
-      <li><a href="#">Tecnologias</a></li>
-      <li><a href="#">Projectos</a></li>
-      <li><a href="#">Sobre mi</a></li>
+      {
+        translation.map((item) => (
+          <li>
+            <a href={`${item.url}`}>{item.title}</a>
+          </li>
+        ))
+      }
     </ul>
   </nav>
 </header>
@@ -12,15 +19,28 @@
 <style>
   header {
     background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(172, 139, 250, 0.37);
+    box-shadow: 0 14px 10px 0 rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+
+    li {
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        scale: 0.9;
+      }
+      a {
+        color: #111111;
+        /* font-weight: 700; */
+
+        &:hover {
+          color: #5d5d5d;
+        }
+      }
+    }
   }
   a {
-    color: #925df5;
-
-    &:hover {
-      color: #521d95;
-    }
+    color: #111;
+    font-weight: 400;
+    font-style: italic;
   }
 </style>

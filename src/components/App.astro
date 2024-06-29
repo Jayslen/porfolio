@@ -1,0 +1,19 @@
+---
+import Header from '../components/Header.astro'
+import Layout from '../layouts/Layout.astro'
+import AboutMeSection from '../components/AboutMeSection.astro'
+import TechnologiesSection from '../components/TechnologiesSection.astro'
+import ProjectsSection from '../components/ProjectsSection.astro'
+import { getTranslations } from '../i18n/i18n'
+
+const DATA = getTranslations({ language: Astro.currentLocale })
+---
+
+<Layout title="Mi porfolio">
+  <main class="mx-[30rem] relative">
+    <Header translation={DATA.HEADER_SECTION} />
+    <AboutMeSection translation={DATA.INTRODUCCION_SECTION} />
+    <TechnologiesSection translation={DATA.TECNOLOGIES_SECTION} />
+    <ProjectsSection translation={DATA.PROJECT_SECTION} />
+  </main>
+</Layout>

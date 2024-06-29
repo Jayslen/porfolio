@@ -1,0 +1,91 @@
+---
+import AstroLogo from './Icons/AstroLogo.astro'
+import GithubIcon from './Icons/GithubLogo.astro'
+import ReactLogo from './Icons/ReactLogo.astro'
+import ReactRouterDomLogo from './Icons/ReactRouterDomLogo.astro'
+import TailwindLogo from './Icons/TailwindLogo.astro'
+import WebLogo from './Icons/WebLogo.astro'
+import LinkComponent from './LinkComponent.astro'
+
+const STACK = {
+  react: {
+    name: 'React',
+    Logo: ReactLogo,
+    textColor: '#fff',
+    bgColor: '#1a7ca0',
+  },
+  astro: {
+    name: 'Astro',
+    Logo: AstroLogo,
+    textColor: '#fff',
+    bgColor: '#ff9532',
+  },
+  tailwind: {
+    name: 'Tailwind',
+    Logo: TailwindLogo,
+    textColor: '#fff',
+    bgColor: '#307b8a',
+  },
+  reactRouter: {
+    name: 'ReactRouter',
+    Logo: ReactRouterDomLogo,
+    textColor: '#fff',
+    bgColor: '#ff5b6f',
+  },
+}
+
+const { title, description, image, stack, repository, webSite } = Astro.props
+const stackLogo = stack.map((data) => STACK[data])
+---
+
+<li
+  class="bg-cod-gray-100 hover:bg-cod-gray-200 rounded-xl overflow-hidden transition-all duration-300"
+>
+  <div class="flex w-full overflow-hidden relative">
+    {
+      (
+        <img
+          src={image[0]}
+          alt={`Imagen sobre el proyecto ${title}`}
+          class="rounded-t w-full h-full -translate-x-0 image"
+        />
+      )
+    }
+    <ul class="flex gap-2 my-1 absolute bottom-2 left-2">
+      {
+        stackLogo.map((data) => (
+          <li
+            style={`background-color: ${data.bgColor}; color:${data.textColor}`}
+            class="flex items-center gap-1 text-cod-gray-50 rounded-full px-2"
+          >
+            <span class="italic text-xs">{data.name}</span>
+            <div class="w-5">
+              <data.Logo />
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <article class="p-4">
+    <h3 class="text-xl font-bold mt-2 italic">{title}</h3>
+
+    <p class="line-clamp-3">{description}</p>
+    <footer class="flex gap-2">
+      {
+        repository && (
+          <LinkComponent link={repository} text="Github">
+            <GithubIcon />
+          </LinkComponent>
+        )
+      }
+      {
+        webSite && (
+          <LinkComponent link={webSite} text="Sitio Web">
+            <WebLogo />
+          </LinkComponent>
+        )
+      }
+    </footer>
+  </article>
+</li>

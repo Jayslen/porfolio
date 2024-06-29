@@ -1,0 +1,13 @@
+---
+import Section from './Section.astro'
+import Project from './Project.astro'
+
+const { translation } = Astro.props
+---
+
+<Section title={translation.PROJECTS_SECTION_TITLE} id="projects">
+  <!-- <p>Section is a component that wraps content in a section tag</p> -->
+  <ul class="grid grid-cols-2 gap-4">
+    {translation.PROJECTS.map((project) => <Project {...project} />)}
+  </ul>
+</Section>
