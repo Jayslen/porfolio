@@ -1,12 +1,14 @@
 ---
 const { translation } = Astro.props
+const lang = Astro.currentLocale
+const links = lang === 'es' ? 'en' : 'es'
 ---
 
 <header
   class="w-full bg-cod-gray-50 sticky top-5 z-10 rounded-b-lg py-3 right-0 lg:w-96"
 >
   <nav>
-    <ul class="flex justify-center gap-4">
+    <ul class="flex justify-center items-center gap-4">
       {
         translation.map((item) => (
           <li>
@@ -14,6 +16,13 @@ const { translation } = Astro.props
           </li>
         ))
       }
+      <a href={`/${links}`}>
+        <img
+          src="/public/translation-img.png"
+          class="h-14 hover:scale-[0.95] transition-transform duration-300"
+          alt=""
+        />
+      </a>
     </ul>
   </nav>
 </header>
