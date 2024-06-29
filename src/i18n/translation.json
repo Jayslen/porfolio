@@ -61,7 +61,7 @@
         {
           "title": "Latinoled.",
           "description": "Latinoled is an exciting word game inspired by the popular game Wordle, but with a cultural twist that allows you to immerse yourself in the linguistic richness of Latin America. Players have the opportunity to choose the country they want to guess words from, which adds a unique and educational element to the game.",
-          "image": ["/public/latinoled.png"],
+          "image": ["/latinoled.png"],
           "stack": ["react", "tailwind"],
           "repository": "https://github.com/Jayslen/Latinoled",
           "webSite": "https://www.latinoled.online/"
@@ -69,7 +69,7 @@
         {
           "title": "Real Madrid - Blog.",
           "description": "Real Madrid is a news blog about the Real Madrid football team. The blog features a home page that displays the latest news and a details page that shows the full news. Users can click on a news to view more details and can click on a link to read the full news on the official Real Madrid website. The blog also features a contact page where users can send a message to the Real Madrid team.",
-          "image": ["/public/real-madrid.png", "/public/real-madrid-2.png"],
+          "image": ["/real-madrid.png", "/real-madrid-2.png"],
           "stack": ["astro", "tailwind"],
           "repository": "https://github.com/Jayslen/real-madrid-landing-page",
           "webSite": "https://real-madrid-landing-page.vercel.app/"
@@ -77,10 +77,7 @@
         {
           "title": "Exams Generator.",
           "description": "This web page is made with the purpose of helping students study for their exams. It has the functionality of generating questions from a text that the user provides and being able to save the generated questions that the user wants, where they are saved in a database in notion to be able to study it when they want like flashcards.",
-          "image": [
-            "/public/exam-generator-1.png",
-            "public/exam-generator-2.png"
-          ],
+          "image": ["/exam-generator-1.png", "/exam-generator-2.png"],
           "stack": ["react", "reactRouter", "tailwind"],
           "repository": "https://github.com/Jayslen/exams-generator",
           "webSite": "https://exams-generator.vercel.app/"
@@ -88,7 +85,7 @@
         {
           "title": "Countries data explorer.",
           "description": "The Country Info web application allows users to search and view information about countries around the world. This includes details such as population, region, capital, languages spoken, and more. The project is part of a Frontend Mentor challenge, which aims to help developers improve their skills through real-world projects.",
-          "image": ["/public/countries-data.png"],
+          "image": ["/countries-data.png"],
           "stack": ["astro", "react", "tailwind"],
           "repository": "https://github.com/Jayslen/web-countries-data",
           "webSite": "https://web-countries-data.vercel.app"

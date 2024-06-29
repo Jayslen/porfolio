@@ -1,7 +1,7 @@
 ---
 const { translation } = Astro.props
 const lang = Astro.currentLocale
-const links = lang === 'es' ? '/' : 'en'
+const links = lang === 'es' ? '/' : '/en'
 ---
 
 <header
@@ -16,13 +16,15 @@ const links = lang === 'es' ? '/' : 'en'
           </li>
         ))
       }
-      <a href={`/${links}`}>
-        <img
-          src="/public/translation-img.png"
-          class="h-14 hover:scale-[0.95] transition-transform duration-300"
-          alt=""
-        />
-      </a>
+      <li>
+        <a href={`${links}`}>
+          <img
+            src="/translation-img.png"
+            class="h-14 hover:scale-[0.95] transition-transform duration-300"
+            alt=""
+          />
+        </a>
+      </li>
     </ul>
   </nav>
 </header>
