@@ -9,50 +9,49 @@ import TailwindLogo from './Icons/TailwindLogo.astro'
 import ReactRouterDomLogo from './Icons/ReactRouterDomLogo.astro'
 import AstroLogo from './Icons/AstroLogo.astro'
 
-const { TEXT } = Astro.props
 const { translation } = Astro.props
 
 const bentoClasses = [
   {
     name: 'HTML',
     logo: HtmlLogo,
-    bento: 'row-span-3 col-span-5',
+    bento: 'lg:row-span-3 lg:col-span-5',
     hoverColor: '#f48043',
   },
   {
     name: 'CSS',
     logo: CssLogo,
-    bento: 'row-span-3 col-span-2',
+    bento: 'lg:row-span-3 lg:col-span-2',
     hoverColor: '#6596f5',
   },
   {
     name: 'JavaScript',
     logo: JSLogo,
-    bento: 'row-span-6 col-span-2',
+    bento: 'lg:row-span-6 lg:col-span-2',
     hoverColor: '#ffda43',
   },
   {
     name: 'React',
     logo: ReactLogo,
-    bento: 'row-span-3 col-span-2',
+    bento: 'lg:row-span-3 lg:col-span-2',
     hoverColor: '#aee6f3',
   },
   {
     name: 'Tailwind',
     logo: TailwindLogo,
-    bento: 'row-span-3 col-span-5',
+    bento: 'lg:row-span-3 lg:col-span-5',
     hoverColor: '#8ad0d6',
   },
   {
     name: 'React Router Dom',
     logo: ReactRouterDomLogo,
-    bento: 'row-span-3 col-span-6',
+    bento: 'lg:row-span-3 lg:col-span-6',
     hoverColor: '#ff9da9',
   },
   {
     name: 'Astro',
     logo: AstroLogo,
-    bento: 'row-span-3 col-span-3',
+    bento: 'lg:row-span-3 lg:col-span-3',
     hoverColor: '#ff9532',
   },
 ]
@@ -62,11 +61,13 @@ const bentoClasses = [
   <p>
     {translation.PARAGRAPH}
   </p>
-  <article class="h-[500px] grid grid-cols-9 grid-rows-9 gap-4">
+  <ul
+    class="grid grid-cols-2 gap-4 lg:h-[500px] lg:grid lg:grid-cols-9 lg:grid-rows-9"
+  >
     {
       bentoClasses.map((data) => (
         <BentoItem
-          className={`${data.bento}`}
+          className={`${data.bento} `}
           text={data.name}
           hoverColor={data.hoverColor}
         >
@@ -74,5 +75,5 @@ const bentoClasses = [
         </BentoItem>
       ))
     }
-  </article>
+  </ul>
 </Section>

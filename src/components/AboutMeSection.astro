@@ -17,20 +17,20 @@ const {
 ---
 
 <Section title={INTRODUCCION_SECTION_TITLE} id="about-me">
-  <article class="my-4 flex gap-3 w-[750px] h-96">
+  <article class="w-full my-4 flex flex-col gap-3 md:flex-row md:w-[750px]">
     <img
       src="/public/me.png"
       alt="Persona de pie en la orilla del mar, con el agua tocando sus pies, bajo un cielo parcialmente nublado en la playa."
-      class="rounded w-80 h-full object-cover"
+      class="w-full rounded md:w-80 h-full object-cover"
     />
     <div class="grid place-content-center">
       <span>{WORK_STATUS}</span>
       <h3 class="text-xl font-black" set:html={NAME} />
-      <p class="w-full text-pretty">
+      <p class="w-full">
         {FIRST_PARAGRAPH}
       </p>
-      <p class="w-full text-pretty" set:html={SECOND_PARAGRAPH} />
-      <p class="w-full text-pretty" set:html={THIRD_PARAGRAPH} />
+      <p class="w-full" set:html={SECOND_PARAGRAPH} />
+      <p class="w-full" set:html={THIRD_PARAGRAPH} />
       <footer class="flex gap-1">
         <a href="#">
           <GithubLogo />
@@ -50,7 +50,7 @@ const {
 </Section>
 
 <style>
-  h3 > span {
+  h3 span {
     background-clip: text;
     background-image: linear-gradient(to right, #56ab2f, #3b8ed5, #7c3aed);
     color: transparent;
