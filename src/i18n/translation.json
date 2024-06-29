@@ -6,7 +6,7 @@
         {
           "title": "Latinoled.",
           "description": "Latinoled es un emocionante juego de palabras inspirado en el popular juego Wordle, pero con un toque cultural que te permite sumergirte en la riqueza lingüística de América Latina. Los jugadores tienen la oportunidad de elegir el país del cual desean adivinar palabras, lo que añade un elemento único y educativo al juego.",
-          "image": ["/public/latinoled.png"],
+          "image": ["/latinoled.png"],
           "stack": ["react", "tailwind"],
           "repository": "https://github.com/Jayslen/Latinoled",
           "webSite": "https://www.latinoled.online/"
@@ -14,7 +14,7 @@
         {
           "title": "Real Madrid - Blog.",
           "description": "Real Madrid es un blog de noticias sobre el equipo de fútbol Real Madrid. El blog cuenta con una página de inicio que muestra las últimas noticias y una página de detalles que muestra la noticia completa. Los usuarios pueden hacer clic en una noticia para ver más detalles y pueden hacer clic en un enlace para leer la noticia completa en el sitio web oficial del Real Madrid. El blog también cuenta con una página de contacto donde los usuarios pueden enviar un mensaje al equipo de Real Madrid.",
-          "image": ["/public/real-madrid.png", "/public/real-madrid-2.png"],
+          "image": ["/real-madrid.png", "/public/real-madrid-2.png"],
           "stack": ["astro", "tailwind"],
           "repository": "https://github.com/Jayslen/real-madrid-landing-page",
           "webSite": "https://real-madrid-landing-page.vercel.app/"
@@ -22,17 +22,14 @@
         {
           "title": "Exams Generator.",
           "description": "Esta pagina web esta hecha con el proposito de ayudar a los estudiantes a estudiar para sus examenes. Esta tiene la funcionalidad de generar preguntas a partir de un texto que el usuario proveea y poder guardar las preguntas generadas que el usuario desee, donde se guardan en una base de datos en notion para poder estudiarla cuando quieran tipo flashcards.",
-          "image": [
-            "/public/exam-generator-1.png",
-            "public/exam-generator-2.png"
-          ],
+          "image": ["/exam-generator-1.png", "/exam-generator-2.png"],
           "stack": ["react", "reactRouter", "tailwind"],
           "repository": "https://github.com/Jayslen/exams-generator"
         },
         {
           "title": "Countries data explorer.",
           "description": "La aplicación web Country Info permite a los usuarios buscar y ver información sobre países de todo el mundo. Esto incluye detalles como población, región, capital, idiomas hablados y más. El proyecto es parte de un desafío de Frontend Mentor, que tiene como objetivo ayudar a los desarrolladores a mejorar sus habilidades a través de proyectos del mundo real.",
-          "image": ["/public/countries-data.png"],
+          "image": ["/countries-data.png"],
           "stack": ["astro", "react", "tailwind"],
           "repository": "https://github.com/Jayslen/web-countries-data",
           "webSite": "https://web-countries-data.vercel.app"
