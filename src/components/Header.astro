@@ -1,7 +1,8 @@
 ---
 const { translation } = Astro.props
 const lang = Astro.currentLocale
-const links = lang === 'es' ? '/' : '/en'
+console.log(lang)
+const links = lang === 'en' ? '/es' : '/en'
 ---
 
 <header
