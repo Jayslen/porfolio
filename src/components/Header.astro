@@ -1,60 +1,32 @@
 ---
+import SwitchLanguageComponent from './SwitchLanguageComponent.astro'
 const { translation } = Astro.props
-const lang = Astro.currentLocale
-console.log(lang)
-const links = lang === 'en' ? '/es' : '/en'
 ---
 
 <header
-  class="w-full bg-cod-gray-50 sticky top-5 z-10 rounded-b-lg py-3 right-0 lg:w-96"
+  class="w-full bg-cod-gray-50 sticky top-5 z-10 rounded-b-lg py-3 right-0 lg:w-[500px]"
 >
   <nav>
     <ul class="flex justify-center items-center gap-4">
       {
-        translation.map((item) => (
-          <li>
+        translation.slice(0, -1).map((item) => (
+          <li class="text-white bg-electric-violet-600 hover:bg-electric-violet-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center font-Satoshi">
             <a href={`${item.url}`}>{item.title}</a>
           </li>
         ))
       }
       <li>
-        <a href={`${links}`}>
-          <img
-            src="/translation-img.png"
-            class="h-14 hover:scale-[0.95] transition-transform duration-300"
-            alt=""
-          />
-        </a>
+        <SwitchLanguageComponent TEXT_TRANSLATIONS={translation.at(-1)} />
       </li>
     </ul>
   </nav>
-</header>
 
-<style>
-  header {
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 14px 10px 0 rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-
-    li {
-      transition: all 0.3s ease-in-out;
-      &:hover {
-        scale: 0.9;
-      }
-      a {
-        color: #111111;
-        /* font-weight: 700; */
-
-        &:hover {
-          color: #5d5d5d;
-        }
-      }
+  <style>
+    header {
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 14px 10px 0 rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
     }
-  }
-  a {
-    color: #111;
-    font-weight: 400;
-    font-style: italic;
-  }
-</style>
+  </style>
+</header>

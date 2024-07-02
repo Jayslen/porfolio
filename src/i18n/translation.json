@@ -43,7 +43,14 @@
     "HEADER_SECTION": [
       { "title": "Inicio", "url": "#about-me" },
       { "title": "Proyectos", "url": "#projects" },
-      { "title": "Tecnologias", "url": "#technologies" }
+      { "title": "Tecnologias", "url": "#technologies" },
+      {
+        "title": "Idioma",
+        "options": [
+          { "title": "Español", "link": "/es" },
+          { "title": "Ingles", "link": "/" }
+        ]
+      }
     ],
     "INTRODUCCION_SECTION": {
       "INTRODUCCION_SECTION_TITLE": "Quien soy?",
@@ -99,7 +106,14 @@
     "HEADER_SECTION": [
       { "title": "Home", "url": "#about-me" },
       { "title": "Projects", "url": "#projects" },
-      { "title": "Tecnologies", "url": "#technologies" }
+      { "title": "Tecnologies", "url": "#technologies" },
+      {
+        "title": "Language",
+        "options": [
+          { "title": "Spanish", "link": "/es" },
+          { "title": "English", "link": "/" }
+        ]
+      }
     ],
     "INTRODUCCION_SECTION": {
       "INTRODUCCION_SECTION_TITLE": "Who am I?",
