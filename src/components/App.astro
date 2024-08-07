@@ -2,7 +2,6 @@
 import Header from '../components/Header.astro'
 import Layout from '../layouts/Layout.astro'
 import AboutMeSection from '../components/AboutMeSection.astro'
-import TechnologiesSection from '../components/TechnologiesSection.astro'
 import ProjectsSection from '../components/ProjectsSection.astro'
 import { getTranslations } from '../i18n/i18n'
 const { currentLocale } = Astro
@@ -15,10 +14,9 @@ const DATA = getTranslations({ language: currentLocale })
     ? 'Mi porfolio - Jayslen Rojas Seerano'
     : 'My porfolio - Jayslen Rojas Serrano'}
 >
-  <main class="mx-5 lg:mx-[10rem] xl:mx-[30rem] relative">
+  <main class="mx-5 lg:mx-[10rem] xl:mx-[30rem] mb-14 relative">
     <Header translation={DATA.HEADER_SECTION} />
     <AboutMeSection translation={DATA.INTRODUCCION_SECTION} />
-    <TechnologiesSection translation={DATA.TECNOLOGIES_SECTION} />
     <ProjectsSection translation={DATA.PROJECT_SECTION} />
   </main>
 </Layout>

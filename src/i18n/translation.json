@@ -1,7 +1,7 @@
 {
   "es": {
     "PROJECT_SECTION": {
-      "PROJECTS_SECTION_TITLE": "Proyectos",
+      "PROJECTS_SECTION_TITLE": "Algunos proyectos que he realizado.",
       "PROJECTS": [
         {
           "title": "Latinoled.",
@@ -21,13 +21,13 @@
         },
         {
           "title": "Exams Generator.",
-          "description": "Esta pagina web esta hecha con el proposito de ayudar a los estudiantes a estudiar para sus examenes. Esta tiene la funcionalidad de generar preguntas a partir de un texto que el usuario proveea y poder guardar las preguntas generadas que el usuario desee, donde se guardan en una base de datos en notion para poder estudiarla cuando quieran tipo flashcards.",
+          "description": "Esta página web está hecha con el propósito de ayudar a los estudiantes a estudiar para sus exámenes. Tiene la funcionalidad de generar preguntas a partir de un texto que el usuario provea y poder guardar las preguntas generadas que el usuario desee, las cuales se almacenan en una base de datos en Notion para poder estudiarlas cuando quieran, en formato de flashcards.",
           "image": ["/exam-generator-1.png", "/exam-generator-2.png"],
           "stack": ["react", "reactRouter", "tailwind"],
           "repository": "https://github.com/Jayslen/exams-generator"
         },
         {
-          "title": "Countries data explorer.",
+          "title": "Countries Data Explorer.",
           "description": "La aplicación web Country Info permite a los usuarios buscar y ver información sobre países de todo el mundo. Esto incluye detalles como población, región, capital, idiomas hablados y más. El proyecto es parte de un desafío de Frontend Mentor, que tiene como objetivo ayudar a los desarrolladores a mejorar sus habilidades a través de proyectos del mundo real.",
           "image": ["/countries-data.png"],
           "stack": ["astro", "react", "tailwind"],
@@ -37,33 +37,25 @@
       ]
     },
     "TECNOLOGIES_SECTION": {
-      "TITLE": "Tecnologias",
+      "TITLE": "Tecnologías",
       "PARAGRAPH": "Estas son algunas de las tecnologías que he aprendido."
     },
-    "HEADER_SECTION": [
-      { "title": "Inicio", "url": "#about-me" },
-      { "title": "Proyectos", "url": "#projects" },
-      { "title": "Tecnologias", "url": "#technologies" },
-      {
-        "title": "Idioma",
-        "options": [
-          { "title": "Español", "link": "/es" },
-          { "title": "Ingles", "link": "/" }
-        ]
-      }
-    ],
+    "HEADER_SECTION": {
+      "title": "Language to English",
+      "url": "/en"
+    },
     "INTRODUCCION_SECTION": {
-      "INTRODUCCION_SECTION_TITLE": "Quien soy?",
+      "INTRODUCCION_SECTION_TITLE": "Mi nombre es Jayslen Rojas Serrano",
       "WORK_STATUS": "Disponible para trabajar",
-      "NAME": " Soy, <span>Jayslen Rojas Serrano</span>",
       "FIRST_PARAGRAPH": "Tengo 19 años y resido en la República Dominicana.",
-      "SECOND_PARAGRAPH": "Actualmente no cuento con experiencia laboral,pero he desarrollado sólidos conocimientos en el <strong>desarrollo web</strong>, incluyendo   HTML, CSS, JavaScript y diversos frameworks modernos, de manera auto didacta, y creando proyectos personales.",
-      "THIRD_PARAGRAPH": "Ademas estoy cursando la carrera de <strong>Desarrollo de Software</strong> en el <strong> Instituto Tecnológico de las Américas (ITLA)</strong>, donde me estoy formando con un integral en las últimas tendencias y tecnologías del sector."
+      "SECOND_PARAGRAPH": "Actualmente no cuento con experiencia laboral, pero he desarrollado sólidos conocimientos en el <strong>desarrollo web</strong>, incluyendo HTML, CSS, JavaScript y diversos frameworks modernos, de manera autodidacta, y creando proyectos personales.",
+      "THIRD_PARAGRAPH": "Además, estoy cursando la carrera de <strong>Desarrollo de Software</strong> en el <strong>Instituto Tecnológico de las Américas (ITLA)</strong>, donde me estoy formando con un enfoque integral en las últimas tendencias y tecnologías del sector.",
+      "TECHNOLOGIES_TITLE": "Estas son algunas tecnologías que he aprendido en mi camino."
     }
   },
   "en": {
     "PROJECT_SECTION": {
-      "PROJECTS_SECTION_TITLE": "Projects",
+      "PROJECTS_SECTION_TITLE": "Some projects that i have done.",
       "PROJECTS": [
         {
           "title": "Latinoled.",
@@ -86,8 +78,7 @@
           "description": "This web page is made with the purpose of helping students study for their exams. It has the functionality of generating questions from a text that the user provides and being able to save the generated questions that the user wants, where they are saved in a database in notion to be able to study it when they want like flashcards.",
           "image": ["/exam-generator-1.png", "/exam-generator-2.png"],
           "stack": ["react", "reactRouter", "tailwind"],
-          "repository": "https://github.com/Jayslen/exams-generator",
-          "webSite": "https://exams-generator.vercel.app/"
+          "repository": "https://github.com/Jayslen/exams-generator"
         },
         {
           "title": "Countries data explorer.",
@@ -103,25 +94,17 @@
       "TITLE": "Technologies",
       "PARAGRAPH": "These are some of the technologies that I have learned."
     },
-    "HEADER_SECTION": [
-      { "title": "Home", "url": "#about-me" },
-      { "title": "Projects", "url": "#projects" },
-      { "title": "Tecnologies", "url": "#technologies" },
-      {
-        "title": "Language",
-        "options": [
-          { "title": "Spanish", "link": "/es" },
-          { "title": "English", "link": "/" }
-        ]
-      }
-    ],
+    "HEADER_SECTION": {
+      "title": "Idioma a Español",
+      "url": "/es"
+    },
     "INTRODUCCION_SECTION": {
-      "INTRODUCCION_SECTION_TITLE": "Who am I?",
+      "INTRODUCCION_SECTION_TITLE": "I am Jayslen Rojas Serrano",
       "WORK_STATUS": "Available for work",
-      "NAME": "I'm, <span>Jayslen Rojas Serrano</span>",
       "FIRST_PARAGRAPH": "I'm 19 years old and I live in the Dominican Republic.",
       "SECOND_PARAGRAPH": "I currently do not have work experience, but I have developed solid knowledge in <strong>web development</strong>, including HTML, CSS, JavaScript, and various modern frameworks, in a self-taught way, and creating personal projects.",
-      "THIRD_PARAGRAPH": "I am also studying the career of <strong>Software Development</strong> at the <strong>Instituto Tecnológico de las Américas (ITLA)</strong>, where I am training with an integral in the latest trends and technologies in the sector."
+      "THIRD_PARAGRAPH": "I am also studying the career of <strong>Software Development</strong> at the <strong>Instituto Tecnológico de las Américas (ITLA)</strong>, where I am training with an integral in the latest trends and technologies in the sector.",
+      "TECHNOLOGIES_TITLE": "These are some technologies that I have learned along the way."
     }
   }
 }

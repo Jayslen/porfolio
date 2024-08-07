@@ -4,61 +4,137 @@ import GithubLogo from './Icons/GithubLogo.astro'
 import LinkedinIcon from './Icons/LinkedinIcon.astro'
 import MailIcon from './Icons/MailIcon.astro'
 import Section from './Section.astro'
+import CssLogo from './Icons/CssLogo.astro'
+import HtmlLogo from './Icons/HtmlLogo.astro'
+import JSLogo from './Icons/JSLogo.astro'
+import ReactLogo from './Icons/ReactLogo.astro'
+import TailwindLogo from './Icons/TailwindLogo.astro'
+import ReactRouterDomLogo from './Icons/ReactRouterDomLogo.astro'
+import AstroLogo from './Icons/AstroLogo.astro'
+
 const {
   translation: {
     INTRODUCCION_SECTION_TITLE,
     WORK_STATUS,
-    NAME,
     FIRST_PARAGRAPH,
     SECOND_PARAGRAPH,
     THIRD_PARAGRAPH,
+    TECHNOLOGIES_TITLE,
   },
 } = Astro.props
-
 const lang = Astro.currentLocale
+
 const PDF_FILE =
   lang === 'es' ? '/public/CV-spanish.pdf' : 'public/CV-english.pdf'
+
+const tecnologies = [
+  {
+    name: 'HTML',
+    logo: HtmlLogo,
+    hoverColor: '#f48043',
+  },
+  {
+    name: 'CSS',
+    logo: CssLogo,
+    bento: 'lg:row-span-3 lg:col-span-2',
+    hoverColor: '#6596f5',
+  },
+  {
+    name: 'JavaScript',
+    logo: JSLogo,
+    bento: 'lg:row-span-6 lg:col-span-2',
+    hoverColor: '#ffda43',
+  },
+  {
+    name: 'React',
+    logo: ReactLogo,
+    bento: 'lg:row-span-3 lg:col-span-2',
+    hoverColor: '#aee6f3',
+  },
+  {
+    name: 'Tailwind',
+    logo: TailwindLogo,
+    bento: 'lg:row-span-3 lg:col-span-5',
+    hoverColor: '#8ad0d6',
+  },
+  {
+    name: 'React Router Dom',
+    logo: ReactRouterDomLogo,
+    bento: 'lg:row-span-3 lg:col-span-6',
+    hoverColor: '#ff9da9',
+  },
+  {
+    name: 'Astro',
+    logo: AstroLogo,
+    bento: 'lg:row-span-3 lg:col-span-3',
+    hoverColor: '#ff9532',
+  },
+]
 ---
 
 <Section title={INTRODUCCION_SECTION_TITLE} id="about-me">
-  <article class="w-full my-4 flex flex-col gap-3 md:flex-row md:w-[750px]">
+  <article class="w-full my-4 flex flex-col gap-3 md:flex-row">
     <img
       src="/me.png"
       alt="Persona de pie en la orilla del mar, con el agua tocando sus pies, bajo un cielo parcialmente nublado en la playa."
-      class="w-full rounded md:w-80 h-full object-cover"
+      class="w-full rounded md:w-80 object-cover"
     />
-    <div class="grid place-content-center">
-      <span
-        class="font-bold text- text-electric-violet-950 bg-electric-violet-300 transition-colors duration-300 place-self-start px-4 rounded-full py-2"
-        >{WORK_STATUS}</span
-      >
-      <h3 class="text-xl font-black" set:html={NAME} />
+    <div>
+      <h2 class="text-4xl font-black md:text-3xl skew-x-6">
+        {INTRODUCCION_SECTION_TITLE}.
+      </h2>
       <p class="w-full">
         {FIRST_PARAGRAPH}
       </p>
       <p class="w-full" set:html={SECOND_PARAGRAPH} />
       <p class="w-full" set:html={THIRD_PARAGRAPH} />
-      <footer class="flex gap-1">
+      <h2 class="text-xl font-black skew-x-6">{TECHNOLOGIES_TITLE}</h2>
+      <ul class="flex flex-wrap gap-1 my-1">
+        {
+          tecnologies.map((data) => (
+            <li
+              style={`background-color: ${data.hoverColor}`}
+              class="flex items-center gap-1 rounded px-2 py-1"
+            >
+              <span class="italic text-sm font-Satoshi font-black text-[#1d1d1d]">
+                {data.name}
+              </span>
+              <div class="w-7">
+                <data.logo />
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+      <footer class="flex gap-2 my-2">
         <a href="https://github.com/Jayslen" target="_blank">
           <GithubLogo />
-        </a>
-        <a href={PDF_FILE} download="CV Jayslen Rojas">
-          <CvIcon />
         </a>
         <a href="mailto:jayslen134@gmail.com">
           <MailIcon />
         </a>
+        <a href={PDF_FILE} download="CV Jayslen Rojas">
+          <CvIcon />
+        </a>
       </footer>
     </div>
   </article>
-
-  <style>
-    h3 span {
-      background-clip: text;
-      background-image: linear-gradient(to right, #56ab2f, #3b8ed5, #7c3aed);
-      color: transparent;
-      font-family: 'Satoshi', sans-serif;
-      font-weight: 900;
-    }
-  </style>
 </Section>
+<style>
+  h3 span {
+    background-clip: text;
+    background-image: linear-gradient(to right, #56ab2f, #3b8ed5, #7c3aed);
+    color: transparent;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 900;
+  }
+
+  footer a {
+    width: 45px;
+  }
+
+  footer a:hover {
+    transform: scale(0.9);
+    transition: all 0.3s;
+  }
+</style>
