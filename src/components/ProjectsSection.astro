@@ -9,7 +9,9 @@ const { translation } = Astro.props
   <h2 class="text-4xl font-black md:text-7xl skew-x-6 max-w-2xl">
     {translation.PROJECTS_SECTION_TITLE}
   </h2>
-  <ul class="grid grid-cols-[repeat(auto-fit,minmax(471px,1fr))]">
+  <ul
+    class="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(350px,1fr))]"
+  >
     {translation.PROJECTS.map((project) => <Project {...project} />)}
   </ul>
 </Section>
