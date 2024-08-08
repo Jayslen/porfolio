@@ -6,7 +6,7 @@
         {
           "title": "Latinoled.",
           "description": "Latinoled es un emocionante juego de palabras inspirado en el popular juego Wordle, pero con un toque cultural que te permite sumergirte en la riqueza lingüística de América Latina. Los jugadores tienen la oportunidad de elegir el país del cual desean adivinar palabras, lo que añade un elemento único y educativo al juego.",
-          "image": ["/latinoled.png"],
+          "image": ["/latinoled.png", "/latinoled-2.png"],
           "stack": ["react", "tailwind"],
           "repository": "https://github.com/Jayslen/Latinoled",
           "webSite": "https://www.latinoled.online/"
@@ -22,17 +22,36 @@
         {
           "title": "Exams Generator.",
           "description": "Esta página web está hecha con el propósito de ayudar a los estudiantes a estudiar para sus exámenes. Tiene la funcionalidad de generar preguntas a partir de un texto que el usuario provea y poder guardar las preguntas generadas que el usuario desee, las cuales se almacenan en una base de datos en Notion para poder estudiarlas cuando quieran, en formato de flashcards.",
-          "image": ["/exam-generator-1.png", "/exam-generator-2.png"],
+          "image": [
+            "/exam-generator-1.png",
+            "/exam-generator-2.png",
+            "/exam-generator-3.png",
+            "/exam-generator-4.png",
+            "/exam-generator-5.png"
+          ],
           "stack": ["react", "reactRouter", "tailwind"],
           "repository": "https://github.com/Jayslen/exams-generator"
         },
         {
           "title": "Countries Data Explorer.",
           "description": "La aplicación web Country Info permite a los usuarios buscar y ver información sobre países de todo el mundo. Esto incluye detalles como población, región, capital, idiomas hablados y más. El proyecto es parte de un desafío de Frontend Mentor, que tiene como objetivo ayudar a los desarrolladores a mejorar sus habilidades a través de proyectos del mundo real.",
-          "image": ["/countries-data.png"],
+          "image": ["/countries-data.png", "countries-data-2.png"],
           "stack": ["astro", "react", "tailwind"],
           "repository": "https://github.com/Jayslen/web-countries-data",
           "webSite": "https://web-countries-data.vercel.app"
+        },
+        {
+          "title": "Books landing page",
+          "description": "En esta landing page encontraras lo que son mi lista de libros, divididos en secciones de leyendo, completados y pendientes. En esta landing podras visualizar todos estos libros y detalles del mismo con un diseño sutil y simple. Esta pagina fue desarrollada con astro y tailwind css y usa notion como base de datos para almacenar los datos.",
+          "image": [
+            "/landing-books-1.png",
+            "/landing-books-2.png",
+            "/landing-books-3.png",
+            "/landing-books-4.png"
+          ],
+          "stack": ["astro", "tailwind"],
+          "repository": "https://github.com/Jayslen/books-landing",
+          "webSite": "https://books-landing.vercel.app/"
         }
       ]
     },
@@ -60,7 +79,7 @@
         {
           "title": "Latinoled.",
           "description": "Latinoled is an exciting word game inspired by the popular game Wordle, but with a cultural twist that allows you to immerse yourself in the linguistic richness of Latin America. Players have the opportunity to choose the country they want to guess words from, which adds a unique and educational element to the game.",
-          "image": ["/latinoled.png"],
+          "image": ["/latinoled.png", "/latinoled-2.png"],
           "stack": ["react", "tailwind"],
           "repository": "https://github.com/Jayslen/Latinoled",
           "webSite": "https://www.latinoled.online/"
@@ -76,17 +95,36 @@
         {
           "title": "Exams Generator.",
           "description": "This web page is made with the purpose of helping students study for their exams. It has the functionality of generating questions from a text that the user provides and being able to save the generated questions that the user wants, where they are saved in a database in notion to be able to study it when they want like flashcards.",
-          "image": ["/exam-generator-1.png", "/exam-generator-2.png"],
+          "image": [
+            "/exam-generator-1.png",
+            "/exam-generator-2.png",
+            "/exam-generator-3.png",
+            "/exam-generator-4.png",
+            "/exam-generator-5.png"
+          ],
           "stack": ["react", "reactRouter", "tailwind"],
           "repository": "https://github.com/Jayslen/exams-generator"
         },
         {
           "title": "Countries data explorer.",
           "description": "The Country Info web application allows users to search and view information about countries around the world. This includes details such as population, region, capital, languages spoken, and more. The project is part of a Frontend Mentor challenge, which aims to help developers improve their skills through real-world projects.",
-          "image": ["/countries-data.png"],
+          "image": ["/countries-data.png", "countries-data-2.png"],
           "stack": ["astro", "react", "tailwind"],
           "repository": "https://github.com/Jayslen/web-countries-data",
           "webSite": "https://web-countries-data.vercel.app"
+        },
+        {
+          "title": "Books landing page",
+          "description": "In this landing page you will find my list of books, divided into sections of reading, completed and pending. In this landing you can view all these books and details of it with a subtle and simple design. This page was developed with astro and tailwind css and uses notion as a database to store the data.",
+          "image": [
+            "/landing-books-1.png",
+            "/landing-books-2.png",
+            "/landing-books-3.png",
+            "/landing-books-4.png"
+          ],
+          "stack": ["astro", "tailwind"],
+          "repository": "https://github.com/Jayslen/books-landing",
+          "webSite": "https://books-landing.vercel.app/"
         }
       ]
     },

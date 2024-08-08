@@ -10,7 +10,10 @@ const { translation } = Astro.props
   <div class="flex flex-col items-center justify-center w-full">
     <h3 class="font-Satoshi font-black text-2xl">{title}</h3>
 
-    <a href={translation.url} class="text-gray-50">
+    <a
+      href={translation.url}
+      class="text-cod-gray-100 underline hover:text-[#ffdead]"
+    >
       {translation.title}
     </a>
   </div>

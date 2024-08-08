@@ -40,17 +40,22 @@ const { title, description, image, stack, repository, webSite } = Astro.props
 const stackLogo = stack.map((data) => STACK[data])
 ---
 
-<li class="overflow-hidden transition-all duration-300">
-  <div class="flex h-[270px] overflow-hidden relative">
-    {
-      (
-        <img
-          src={image[0]}
-          alt={`Imagen sobre el proyecto ${title}`}
-          class="rounded-xl w-full h-full object-cover -translate-x-0 image"
-        />
-      )
-    }
+<li class="overflow-hidden transition-all duration-300 w-full">
+  <div class="relative">
+    <div
+      class="flex flex-col flex-wrap h-[270px] container"
+      style={`--translate: -${image.length * 100 - 100}%; --animation-time: ${image.length * 2}s`}
+    >
+      {
+        image.map((image) => (
+          <img
+            src={image}
+            alt={`Imagen sobre el proyecto ${title}`}
+            class="rounded-xl w-full h-full object-cover scale-95"
+          />
+        ))
+      }
+    </div>
   </div>
   <article class="px-2 max-w-md grid place-content-center">
     <h2 class="font-black text-2xl">{title}</h2>
@@ -90,3 +95,46 @@ const stackLogo = stack.map((data) => STACK[data])
     </footer>
   </article>
 </li>
+
+<style>
+  .container {
+    animation-name: carousel;
+    animation-duration: var(--animation-time, 2s);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+  }
+
+  .container:hover {
+    animation-play-state: running;
+  }
+
+  @keyframes carousel {
+    /*     
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(var(--translate));
+    } */
+    /* from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(var(--translate));
+    } */
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(var(--translate));
+    }
+  }
+</style>
+
+<script>
+  const $container = document.querySelector('.container')
+</script>
