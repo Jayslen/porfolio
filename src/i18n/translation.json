@@ -9,7 +9,7 @@
           "image": ["/latinoled.png", "/latinoled-2.png"],
           "stack": ["react", "tailwind"],
           "repository": "https://github.com/Jayslen/Latinoled",
-          "webSite": "https://www.latinoled.online/"
+          "webSite": "https://latinoled.vercel.app/"
         },
         {
           "title": "Real Madrid - Blog.",
@@ -82,7 +82,7 @@
           "image": ["/latinoled.png", "/latinoled-2.png"],
           "stack": ["react", "tailwind"],
           "repository": "https://github.com/Jayslen/Latinoled",
-          "webSite": "https://www.latinoled.online/"
+          "webSite": "https://latinoled.vercel.app/"
         },
         {
           "title": "Real Madrid - Blog.",
