@@ -14,7 +14,7 @@
         {
           "title": "Real Madrid - Blog.",
           "description": "Real Madrid es un blog de noticias sobre el equipo de fútbol Real Madrid. El blog cuenta con una página de inicio que muestra las últimas noticias y una página de detalles que muestra la noticia completa. Los usuarios pueden hacer clic en una noticia para ver más detalles y pueden hacer clic en un enlace para leer la noticia completa en el sitio web oficial del Real Madrid. El blog también cuenta con una página de contacto donde los usuarios pueden enviar un mensaje al equipo de Real Madrid.",
-          "image": ["/real-madrid.png", "/public/real-madrid-2.png"],
+          "image": ["/real-madrid.png", "/real-madrid-2.png"],
           "stack": ["astro", "tailwind"],
           "repository": "https://github.com/Jayslen/real-madrid-landing-page",
           "webSite": "https://real-madrid-landing-page.vercel.app/"
