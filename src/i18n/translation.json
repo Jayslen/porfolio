@@ -52,6 +52,13 @@
           "stack": ["astro", "tailwind"],
           "repository": "https://github.com/Jayslen/books-landing",
           "webSite": "https://books-landing.vercel.app/"
+        },
+        {
+          "title": "Blog personal",
+          "description": "El propósito de este proyecto es un blog personal donde puedes escribir y publicar artículos. El blog está construido con Node JS como backend y utiliza Express JS como framework. El frontend está construido con plantillas EJS. Y cuenta con autenticación básica.",
+          "image": ["/personal-blog.png"],
+          "repository": "https://github.com/Jayslen/personal-blog-practice-project?tab=readme-ov-file",
+          "stack": ["nodeJs"]
         }
       ]
     },
@@ -66,9 +73,9 @@
     "INTRODUCCION_SECTION": {
       "INTRODUCCION_SECTION_TITLE": "Mi nombre es Jayslen Rojas Serrano",
       "WORK_STATUS": "Disponible para trabajar",
-      "FIRST_PARAGRAPH": "Tengo 20 años y resido en la República Dominicana.",
-      "SECOND_PARAGRAPH": "Actualmente no cuento con experiencia laboral, pero he desarrollado sólidos conocimientos en el <strong>desarrollo web</strong>, incluyendo HTML, CSS, JavaScript y diversos frameworks modernos, de manera autodidacta, y creando proyectos personales.",
-      "THIRD_PARAGRAPH": "Además, estoy cursando la carrera de <strong>Desarrollo de Software</strong> en el <strong>Instituto Tecnológico de las Américas (ITLA)</strong>, donde me estoy formando con un enfoque integral en las últimas tendencias y tecnologías del sector.",
+      "FIRST_PARAGRAPH": "Mi nombre es <strong>Jayslen Rojas Serrano</strong>, tengo 20 años y soy un <strong>desarrollador web front-end</strong> con conocimientos en back-end utilizando <strong>Node.js</strong> y <strong>bases de datos SQL</strong>",
+      "SECOND_PARAGRAPH": "Actualmente curso la carrera de <strong>Desarrollo de Software</strong> en el <strong>Instituto Tecnológico de las Américas (ITLA)</strong>, donde me estoy formando con un enfoque integral en tecnologías modernas y las últimas tendencias del sector. A lo largo de mi formación, he adquirido conocimientos avanzados de programación, lo que ha fortalecido mi lógica y capacidad para resolver problemas de forma eficiente.",
+      "THIRD_PARAGRAPH": "Aunque cuento con experiencia laboral, he desarrollado sólidos conocimientos en el <strong>desarrollo web</strong>, incluyendo HTML, CSS, JavaScript y diversos frameworks modernos, como <strong>React</strong> y <strong>Astro.</strong>",
       "TECHNOLOGIES_TITLE": "Estas son algunas tecnologías que he aprendido en mi camino."
     }
   },
@@ -125,6 +132,13 @@
           "stack": ["astro", "tailwind"],
           "repository": "https://github.com/Jayslen/books-landing",
           "webSite": "https://books-landing.vercel.app/"
+        },
+        {
+          "title": "Personal blog",
+          "description": "The purpose of this project is a a personal blog where you can write and publish articles. The blog is built with Node JS as the backend and uses Express JS as the framework. The frontend is built with EJS tempaltes. And it has basic authentication.",
+          "image": ["/personal-blog.png"],
+          "repository": "https://github.com/Jayslen/personal-blog-practice-project?tab=readme-ov-file",
+          "stack": ["nodeJs"]
         }
       ]
     },
@@ -139,10 +153,10 @@
     "INTRODUCCION_SECTION": {
       "INTRODUCCION_SECTION_TITLE": "I am Jayslen Rojas Serrano",
       "WORK_STATUS": "Available for work",
-      "FIRST_PARAGRAPH": "I'm 20 years old and I live in the Dominican Republic.",
-      "SECOND_PARAGRAPH": "I currently do not have work experience, but I have developed solid knowledge in <strong>web development</strong>, including HTML, CSS, JavaScript, and various modern frameworks, in a self-taught way, and creating personal projects.",
-      "THIRD_PARAGRAPH": "I am also studying the career of <strong>Software Development</strong> at the <strong>Instituto Tecnológico de las Américas (ITLA)</strong>, where I am training with an integral in the latest trends and technologies in the sector.",
-      "TECHNOLOGIES_TITLE": "These are some technologies that I have learned along the way."
+      "FIRST_PARAGRAPH": "My name is <strong>Jayslen Rojas Serrano</strong>, I am 20 years old and I am a <strong>front-end web developer</strong> with knowledge in back-end using <strong>Node.js</strong> and <strong>SQL databases</strong>.",
+      "SECOND_PARAGRAPH": "I am currently pursuing a degree in <strong>Software Development</strong> at the <strong>Instituto Tecnológico de las Américas (ITLA)</strong>, where I am being trained with a comprehensive focus on modern technologies and the latest industry trends. Throughout my education, I have acquired advanced programming knowledge, which has strengthened my logic and ability to solve problems efficiently.",
+      "THIRD_PARAGRAPH": "Although I have work experience, I have developed solid knowledge in <strong>web development</strong>, including HTML, CSS, JavaScript, and various modern frameworks such as <strong>React</strong> and <strong>Astro</strong>.",
+      "TECHNOLOGIES_TITLE": "These are some of the technologies I have learned along the way."
     }
   }
 }

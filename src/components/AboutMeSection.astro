@@ -102,9 +102,7 @@ const tecnologies = [
       <h2 class="text-4xl font-black md:text-3xl skew-x-6">
         {INTRODUCCION_SECTION_TITLE}.
       </h2>
-      <p class="w-full">
-        {FIRST_PARAGRAPH}
-      </p>
+      <p class="w-full" set:html={FIRST_PARAGRAPH} />
       <p class="w-full" set:html={SECOND_PARAGRAPH} />
       <p class="w-full" set:html={THIRD_PARAGRAPH} />
       <h2 class="text-xl font-black skew-x-6">{TECHNOLOGIES_TITLE}</h2>
@@ -132,9 +130,9 @@ const tecnologies = [
         <a href="mailto:jayslen134@gmail.com">
           <MailIcon />
         </a>
-        <a href={PDF_FILE} download="CV Jayslen Rojas">
-          <CvIcon />
-        </a>
+        <!-- <a href={PDF_FILE} download="CV Jayslen Rojas"> -->
+        <!-- <CvIcon /> -->
+        <!-- </a> -->
       </footer>
     </div>
   </article>
