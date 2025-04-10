@@ -40,31 +40,23 @@ const { title, description, image, stack, repository, webSite } = Astro.props
 const stackLogo = stack.map((data) => STACK[data])
 ---
 
-<li class="overflow-hidden transition-all duration-300 w-full">
-  <div class="relative">
-    <div
-      class="flex flex-col flex-wrap h-[270px] container"
-      style={`--translate: -${image.length * 100 - 100}%; --animation-time: ${image.length * 2}s`}
-    >
-      {
-        image.map((image) => (
-          <img
-            src={image}
-            alt={`Imagen sobre el proyecto ${title}`}
-            class="rounded-xl w-full h-full object-cover scale-95"
-          />
-        ))
-      }
-    </div>
-  </div>
-  <article class="px-2 max-w-md grid place-content-center">
+<li
+  class="overflow-hidden transition-all duration-300 w-full rounded-xl bg-opacity-50"
+>
+  <img
+    src={image[0]}
+    alt={`Imagen sobre el proyecto ${title}`}
+    class="rounded-xl w-full h-[270px] object-cover"
+  />
+
+  <article>
     <h2 class="font-black text-2xl">{title}</h2>
     <ul class="flex gap-1">
       {
         stackLogo.map((data) => (
           <li
             style={`background-color: ${data.bgColor}; color:${data.textColor}`}
-            class="flex items-center gap-1 text-cod-gray-50 rounded-full px-2"
+            class="flex items-center gap-1 text-cod-gray-100 rounded-full px-2"
           >
             <span class="italic text-xs">{data.name}</span>
             <div class="w-5">
@@ -77,7 +69,7 @@ const stackLogo = stack.map((data) => STACK[data])
 
     <p class="line-clamp-3 max-w-xl">{description}</p>
 
-    <footer class="flex gap-2">
+    <footer class="flex gap-2 my-3.5">
       {
         repository && (
           <LinkComponent link={repository} text="Github">
