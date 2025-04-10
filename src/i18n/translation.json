@@ -1,7 +1,7 @@
 {
   "es": {
     "PROJECT_SECTION": {
-      "PROJECTS_SECTION_TITLE": "Algunos proyectos que he realizado.",
+      "PROJECTS_SECTION_TITLE": "Proyectos.",
       "PROJECTS": [
         {
           "title": "Latinoled.",
@@ -74,7 +74,7 @@
   },
   "en": {
     "PROJECT_SECTION": {
-      "PROJECTS_SECTION_TITLE": "Some projects that i have done.",
+      "PROJECTS_SECTION_TITLE": "Projects.",
       "PROJECTS": [
         {
           "title": "Latinoled.",
