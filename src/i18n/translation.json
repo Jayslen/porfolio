@@ -59,6 +59,13 @@
           "image": ["/personal-blog.png"],
           "repository": "https://github.com/Jayslen/personal-blog-practice-project?tab=readme-ov-file",
           "stack": ["nodeJs"]
+        },
+        {
+          "title": "Blogging Platform API",
+          "description": "Este proyecto es una API de plataforma de blogs construida con Node.js y Express.js. Permite a los usuarios crear, leer, actualizar y eliminar publicaciones de blog. La API está diseñada para ser RESTful y sigue las mejores prácticas para construir APIs. Tiene múltiples modelos como MongoDB, MySQL y Local Storage.",
+          "image": ["/blogging-platform.png"],
+          "repository": "https://github.com/Jayslen/blogging-platform-API",
+          "stack": ["nodeJs"]
         }
       ]
     },
@@ -138,6 +145,13 @@
           "description": "The purpose of this project is a a personal blog where you can write and publish articles. The blog is built with Node JS as the backend and uses Express JS as the framework. The frontend is built with EJS tempaltes. And it has basic authentication.",
           "image": ["/personal-blog.png"],
           "repository": "https://github.com/Jayslen/personal-blog-practice-project?tab=readme-ov-file",
+          "stack": ["nodeJs"]
+        },
+        {
+          "title": "Blogging Platform API",
+          "description": "This project is a blogging platform API built with Node.js and Express.js. It allows users to create, read, update, and delete blog posts. The API is designed to be RESTful and follows best practices for building APIs. It has multiples models like MongoDB, MySQL, and Local Storage.",
+          "image": ["/blogging-platform.png"],
+          "repository": "https://github.com/Jayslen/blogging-platform-API",
           "stack": ["nodeJs"]
         }
       ]
