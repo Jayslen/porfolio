@@ -1,45 +1,25 @@
 ---
-const currentLocale = Astro.currentLocale
-const title = currentLocale === 'es' ? 'Desarrollador Web' : 'Web Developer'
-const { translation } = Astro.props
+const currentLocale = Astro.currentLocale;
+const title = currentLocale === "es" ? "Desarrollador Web" : "Web Developer";
+const { translation } = Astro.props;
 ---
 
-<header
-  class="w-full rounded-md bg-cod-gray-50 sticky top-5 mx-auto sm:w-[500px] z-20 py-2"
+<nav
+    class="p-4 py-2 rounded-full bg-white/35 text-sm fixed top-8 left-1/2 -translate-x-1/2 hover:bg-white/25 transition-colors"
 >
-  <div class="flex items-center justify-between w-full px-4">
-    <h3 class="font-Satoshi font-black text-2xl">{title}</h3>
+    <ul class="flex gap-4">
+        <li>
+            <a href=""> Home </a>
+        </li>
 
-    <div class="w-28 h-10 rounded-lg flex items-center gap-2 justify-center">
-      <span class="text-sm text-white italic">ES</span>
-      <div
-        class="w-full h-8 bg-cod-gray-400 rounded-full p-1 flex items-center relative"
-      >
-        <!-- <label for="language" class="absolute top-0 w-full h-full z-20"> -->
-        <a href={translation.url} class="w-full h-full absolute z-20"></a>
-        <!-- </label> -->
-        <input
-          type="checkbox"
-          id="language"
-          class="peer"
-          checked={currentLocale === 'en'}
-          hidden
-        />
-        <div
-          class="absolute left-1 peer-checked:left-8 w-6 h-6 bg-white rounded-full transition-all"
-        >
-        </div>
-      </div>
-      <span class="text-sm text-white italic">EN</span>
-    </div>
-  </div>
-</header>
-
-<style>
-  header {
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 14px 10px 0 rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-  }
-</style>
+        <li>
+            <a href=""> Expirience </a>
+        </li>
+        <li>
+            <a href=""> Projects</a>
+        </li>
+        <a href="">
+            <li>About</li>
+        </a>
+    </ul>
+</nav>
