@@ -3,6 +3,7 @@ import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import AboutMeSection from "../components/AboutMeSection.astro";
 import { getTranslations } from "../i18n/i18n";
+import SkillLists from "./SkillLists.astro";
 const { currentLocale } = Astro;
 
 const DATA = getTranslations({ language: currentLocale });
@@ -10,12 +11,12 @@ const DATA = getTranslations({ language: currentLocale });
 
 <Layout
     title={currentLocale === "es"
-        ? "Mi porfolio - Jayslen Rojas Seerano"
+        ? "Mi porfolio - Jayslen Rojas Serrano"
         : "My porfolio - Jayslen Rojas Serrano"}
     lang={currentLocale}
 >
+    <Header translation={DATA.HEADER_SECTION} />
     <main class="mx-5 sm:mx-20 md:mx-6 xl:mx-44 2xl:mx-72 mb-14 relative">
-        <Header translation={DATA.HEADER_SECTION} />
         <AboutMeSection translation={DATA.INTRODUCCION_SECTION} />
     </main>
 </Layout>
