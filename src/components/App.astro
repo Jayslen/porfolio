@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import AboutMeSection from "../components/AboutMeSection.astro";
 import { getTranslations } from "../i18n/i18n";
 import SkillLists from "./SkillLists.astro";
+import WorkExpirienceSection from "./WorkExpirienceSection.astro";
 const { currentLocale } = Astro;
 
 const DATA = getTranslations({ language: currentLocale });
@@ -19,5 +20,6 @@ const DATA = getTranslations({ language: currentLocale });
     <main class="relative flex flex-col gap-20">
         <AboutMeSection translation={DATA.INTRODUCCION_SECTION} />
         <SkillLists />
+        <WorkExpirienceSection />
     </main>
 </Layout>
