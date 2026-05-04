@@ -1,6 +1,7 @@
 ---
 import TopWave from "../assets/TopWaves.svg";
 import BottomWave from "../assets/BottomWaves.svg";
+import Divider from "./Divider.astro";
 const matches = import.meta.glob("../assets/icons/*", {
     eager: true,
 });
@@ -15,7 +16,7 @@ const icons = Object.values(matches).map((i: any) => {
 ---
 
 <section class="w-full">
-    <TopWave class="w-full -my-1" />
+    <Divider position="top" class="rotate-90" />
     <div
         class="h-20 bg-[linear-gradient(90deg,#DEE6A9_0%,#CAD677_100%)] flex gap-5"
     >
@@ -37,7 +38,7 @@ const icons = Object.values(matches).map((i: any) => {
             </div>
         </div>
     </div>
-    <BottomWave class="w-full -my-1" />
+    <Divider position="bottom" />
 </section>
 
 <style>
