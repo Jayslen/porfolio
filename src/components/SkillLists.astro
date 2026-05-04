@@ -1,0 +1,66 @@
+---
+import TopWave from "../assets/TopWaves.svg";
+import BottomWave from "../assets/BottomWaves.svg";
+const matches = import.meta.glob("../assets/icons/*", {
+    eager: true,
+});
+
+const icons = Object.values(matches).map((i: any) => {
+    const path = i.default.src;
+    return {
+        src: path,
+        skill: path.split("/").at(-1).split(".png")[0],
+    };
+});
+---
+
+<section class="w-full">
+    <TopWave class="w-full -my-1" />
+    <div
+        class="h-20 bg-[linear-gradient(90deg,#DEE6A9_0%,#CAD677_100%)] flex gap-5"
+    >
+        <div class="overflow-hidden">
+            <div class="flex items-center w-max animate-scroll">
+                {
+                    [...icons, ...icons].map((icon) => {
+                        return (
+                            <div class="relative h-full w-full">
+                                <img
+                                    src={icon.src}
+                                    alt={icon.skill}
+                                    class="w-12 h-full object-cover  mx-4"
+                                />
+                            </div>
+                        );
+                    })
+                }
+            </div>
+        </div>
+    </div>
+    <BottomWave class="w-full -my-1" />
+</section>
+
+<style>
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    .animate-scroll {
+        animation: scroll 30s linear infinite;
+    }
+    /*.animate-scroll:hover {
+        animation-play-state: paused;
+    }*/
+
+    /*img {
+        transition: transform 0.3s ease;
+    }
+    img:hover {
+        scale: 1.2;
+    }*/
+</style>
