@@ -1,9 +1,48 @@
+---
+interface Props {
+    content: {
+        TITLE: string;
+        EXPERIENCE: {
+            company: string;
+            position: string;
+            duration: string;
+            description: string[];
+        }[];
+    };
+}
+
+const {
+    content: { TITLE, EXPERIENCE },
+} = Astro.props;
+---
+
 <section class="mx-5 sm:mx-20 md:mx-6 xl:mx-44 2xl:mx-72 mb-14">
-    <h2 class="text-4xl mb-6 font-extrabold">Work Experience</h2>
+    <h2 class="text-4xl mb-6 font-extrabold">{TITLE}</h2>
 
     <div class="relative flex items-center gap-4">
         <div class="w-0.5 h-48 bg-white top-0"></div>
-        <div>
+        {
+            EXPERIENCE.map((data) => {
+                return (
+                    <div>
+                        <header>
+                            <span class="text-[#BDCA58] text-lg">
+                                {data.duration}
+                            </span>
+                            <h4 class="font-bold text-xl">{data.company}</h4>
+                            <span class="italic text-md">{data.position}</span>
+                        </header>
+
+                        <ul class="list-disc list-inside">
+                            {data.description.map((item) => {
+                                return <li>{item}</li>;
+                            })}
+                        </ul>
+                    </div>
+                );
+            })
+        }
+        <!-- <div>
             <header>
                 <span class="text-[#BDCA58] text-sm">March 2026 – Present</span>
                 <h4 class="font-bold">Grupo Estrella</h4>
@@ -26,6 +65,6 @@
                     enable effective visualization and decision-making.
                 </li>
             </ul>
-        </div>
+        </div> -->
     </div>
 </section>

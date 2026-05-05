@@ -1,11 +1,11 @@
 {
   "es": {
     "PROJECT_SECTION": {
-      "PROJECTS_SECTION_TITLE": "Proyectos.",
+      "PROJECTS_SECTION_TITLE": "Projects.",
       "PROJECTS": [
         {
           "title": "Latinoled.",
-          "description": "Latinoled es un emocionante juego de palabras inspirado en el popular juego Wordle, pero con un toque cultural que te permite sumergirte en la riqueza lingüística de América Latina. Los jugadores tienen la oportunidad de elegir el país del cual desean adivinar palabras, lo que añade un elemento único y educativo al juego.",
+          "description": "Latinoled is an exciting word game inspired by the popular game Wordle, but with a cultural twist that allows you to immerse yourself in the linguistic richness of Latin America. Players have the opportunity to choose the country they want to guess words from, which adds a unique and educational element to the game.",
           "image": ["/latinoled.png", "/latinoled-2.png"],
           "stack": ["react", "tailwind"],
           "repository": "https://github.com/Jayslen/Latinoled",
@@ -13,7 +13,7 @@
         },
         {
           "title": "Real Madrid - Blog.",
-          "description": "Real Madrid es un blog de noticias sobre el equipo de fútbol Real Madrid. El blog cuenta con una página de inicio que muestra las últimas noticias y una página de detalles que muestra la noticia completa. Los usuarios pueden hacer clic en una noticia para ver más detalles y pueden hacer clic en un enlace para leer la noticia completa en el sitio web oficial del Real Madrid. El blog también cuenta con una página de contacto donde los usuarios pueden enviar un mensaje al equipo de Real Madrid.",
+          "description": "Real Madrid is a news blog about the Real Madrid football team. The blog features a home page that displays the latest news and a details page that shows the full news. Users can click on a news to view more details and can click on a link to read the full news on the official Real Madrid website. The blog also features a contact page where users can send a message to the Real Madrid team.",
           "image": ["/real-madrid.png", "/real-madrid-2.png"],
           "stack": ["astro", "tailwind"],
           "repository": "https://github.com/Jayslen/real-madrid-landing-page",
@@ -21,7 +21,7 @@
         },
         {
           "title": "Exams Generator.",
-          "description": "Esta página web está hecha con el propósito de ayudar a los estudiantes a estudiar para sus exámenes. Tiene la funcionalidad de generar preguntas a partir de un texto que el usuario provea y poder guardar las preguntas generadas que el usuario desee, las cuales se almacenan en una base de datos en Notion para poder estudiarlas cuando quieran, en formato de flashcards.",
+          "description": "This web page is made with the purpose of helping students study for their exams. It has the functionality of generating questions from a text that the user provides and being able to save the generated questions that the user wants, where they are saved in a database in notion to be able to study it when they want like flashcards.",
           "image": [
             "/exam-generator-1.png",
             "/exam-generator-2.png",
@@ -33,8 +33,8 @@
           "repository": "https://github.com/Jayslen/exams-generator"
         },
         {
-          "title": "Countries Data Explorer.",
-          "description": "La aplicación web Country Info permite a los usuarios buscar y ver información sobre países de todo el mundo. Esto incluye detalles como población, región, capital, idiomas hablados y más. El proyecto es parte de un desafío de Frontend Mentor, que tiene como objetivo ayudar a los desarrolladores a mejorar sus habilidades a través de proyectos del mundo real.",
+          "title": "Countries data explorer.",
+          "description": "The Country Info web application allows users to search and view information about countries around the world. This includes details such as population, region, capital, languages spoken, and more. The project is part of a Frontend Mentor challenge, which aims to help developers improve their skills through real-world projects.",
           "image": ["/countries-data.png", "countries-data-2.png"],
           "stack": ["astro", "react", "tailwind"],
           "repository": "https://github.com/Jayslen/web-countries-data",
@@ -42,7 +42,7 @@
         },
         {
           "title": "Books landing page",
-          "description": "En esta landing page encontraras lo que son mi lista de libros, divididos en secciones de leyendo, completados y pendientes. En esta landing podras visualizar todos estos libros y detalles del mismo con un diseño sutil y simple. Esta pagina fue desarrollada con astro y tailwind css y usa notion como base de datos para almacenar los datos.",
+          "description": "In this landing page you will find my list of books, divided into sections of reading, completed and pending. In this landing you can view all these books and details of it with a subtle and simple design. This page was developed with astro and tailwind css and uses notion as a database to store the data.",
           "image": [
             "/landing-books-1.png",
             "/landing-books-2.png",
@@ -54,15 +54,15 @@
           "webSite": "https://books-landing.vercel.app/"
         },
         {
-          "title": "Blog personal",
-          "description": "El propósito de este proyecto es un blog personal donde puedes escribir y publicar artículos. El blog está construido con Node JS como backend y utiliza Express JS como framework. El frontend está construido con plantillas EJS. Y cuenta con autenticación básica.",
+          "title": "Personal blog",
+          "description": "The purpose of this project is a a personal blog where you can write and publish articles. The blog is built with Node JS as the backend and uses Express JS as the framework. The frontend is built with EJS tempaltes. And it has basic authentication.",
           "image": ["/personal-blog.png"],
           "repository": "https://github.com/Jayslen/personal-blog-practice-project?tab=readme-ov-file",
           "stack": ["nodeJs"]
         },
         {
           "title": "Blogging Platform API",
-          "description": "Este proyecto es una API de plataforma de blogs construida con Node.js y Express.js. Permite a los usuarios crear, leer, actualizar y eliminar publicaciones de blog. La API está diseñada para ser RESTful y sigue las mejores prácticas para construir APIs. Tiene múltiples modelos como MongoDB, MySQL y Local Storage.",
+          "description": "This project is a blogging platform API built with Node.js and Express.js. It allows users to create, read, update, and delete blog posts. The API is designed to be RESTful and follows best practices for building APIs. It has multiples models like MongoDB, MySQL, and Local Storage.",
           "image": ["/blogging-platform.png"],
           "repository": "https://github.com/Jayslen/blogging-platform-API",
           "stack": ["nodeJs"]
@@ -70,20 +70,32 @@
       ]
     },
     "TECNOLOGIES_SECTION": {
-      "TITLE": "Tecnologías",
-      "PARAGRAPH": "Estas son algunas de las tecnologías que he aprendido."
+      "TITLE": "Technologies",
+      "PARAGRAPH": "These are some of the technologies that I have learned."
     },
     "HEADER_SECTION": {
-      "title": "Language to English",
-      "url": "/en"
+      "title": "Idioma a Español",
+      "url": "/es"
     },
     "INTRODUCCION_SECTION": {
-      "INTRODUCCION_SECTION_TITLE": "Mi nombre es Jayslen Rojas Serrano",
-      "WORK_STATUS": "Disponible para trabajar",
-      "FIRST_PARAGRAPH": "Mi nombre es <strong>Jayslen Rojas Serrano</strong>, tengo 20 años y soy un <strong>desarrollador web front-end</strong> con conocimientos en back-end utilizando <strong>Node.js</strong> y <strong>bases de datos SQL</strong>",
-      "SECOND_PARAGRAPH": "Actualmente curso la carrera de <strong>Desarrollo de Software</strong> en el <strong>Instituto Tecnológico de las Américas (ITLA)</strong>, donde me estoy formando con un enfoque integral en tecnologías modernas y las últimas tendencias del sector. A lo largo de mi formación, he adquirido conocimientos avanzados de programación, lo que ha fortalecido mi lógica y capacidad para resolver problemas de forma eficiente.",
-      "THIRD_PARAGRAPH": "Aunque cuento con experiencia laboral, he desarrollado sólidos conocimientos en el <strong>desarrollo web</strong>, incluyendo HTML, CSS, JavaScript y diversos frameworks modernos, como <strong>React</strong> y <strong>Astro.</strong>",
-      "TECHNOLOGIES_TITLE": "Estas son algunas tecnologías que he aprendido en mi camino."
+      "SUB_TITLE": "Hey, I’m <strong>Jayslen Rojas Serrano</strong>",
+      "INTRODUCCION_SECTION_TITLE": "Software <strong>Developer</strong>",
+      "SHORT_DESCRIPTION": "Final-year Software Development student at ITLA, specialized in full-stack web development. Experience building modern applications using technologies such as React, TypeScript, Node.js, and more. Currently expanding my skill set by learning Rust and exploring high-performance software development.."
+    },
+    "EXPIRIENCE_SECTION": {
+      "TITLE": "Work Experience",
+      "EXPERIENCE": [
+        {
+          "company": "Grupo Estrella",
+          "position": "Intern – Process Automation & Data Analysis",
+          "duration": "March 2026 – Present",
+          "description": [
+            "Automated internal processes using Power Automate, reducing manual tasks and improving operational efficiency.",
+            "Developed interactive dashboards in Power BI to support data analysis for the audit department.",
+            "Performed data cleaning, transformation, and modeling to enable effective visualization and decision-making."
+          ]
+        }
+      ]
     }
   },
   "en": {
@@ -168,6 +180,21 @@
       "SUB_TITLE": "Hey, I’m <strong>Jayslen Rojas Serrano</strong>",
       "INTRODUCCION_SECTION_TITLE": "Software <strong>Developer</strong>",
       "SHORT_DESCRIPTION": "Final-year Software Development student at ITLA, specialized in full-stack web development. Experience building modern applications using technologies such as React, TypeScript, Node.js, and more. Currently expanding my skill set by learning Rust and exploring high-performance software development.."
+    },
+    "EXPIRIENCE_SECTION": {
+      "TITLE": "Work Experience",
+      "EXPERIENCE": [
+        {
+          "company": "Grupo Estrella",
+          "position": "Intern – Process Automation & Data Analysis",
+          "duration": "March 2026 – Present",
+          "description": [
+            "Automated internal processes using Power Automate, reducing manual tasks and improving operational efficiency.",
+            "Developed interactive dashboards in Power BI to support data analysis for the audit department.",
+            "Performed data cleaning, transformation, and modeling to enable effective visualization and decision-making."
+          ]
+        }
+      ]
     }
   }
 }

@@ -7,7 +7,9 @@ import SkillLists from "./SkillLists.astro";
 import WorkExpirienceSection from "./WorkExpirienceSection.astro";
 const { currentLocale } = Astro;
 
-const DATA = getTranslations({ language: currentLocale });
+const { INTRODUCCION_SECTION, EXPIRIENCE_SECTION } = getTranslations({
+    language: currentLocale,
+});
 ---
 
 <Layout
@@ -16,10 +18,10 @@ const DATA = getTranslations({ language: currentLocale });
         : "My porfolio - Jayslen Rojas Serrano"}
     lang={currentLocale}
 >
-    <Header translation={DATA.HEADER_SECTION} />
+    <!-- <Header translation={DATA.HEADER_SECTION} /> -->
     <main class="relative flex flex-col gap-20">
-        <AboutMeSection translation={DATA.INTRODUCCION_SECTION} />
+        <AboutMeSection translation={INTRODUCCION_SECTION} />
         <SkillLists />
-        <WorkExpirienceSection />
+        <WorkExpirienceSection content={EXPIRIENCE_SECTION} />
     </main>
 </Layout>
