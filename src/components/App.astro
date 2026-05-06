@@ -6,12 +6,17 @@ import { getTranslations } from "../i18n/i18n";
 import SkillLists from "./SkillLists.astro";
 import WorkExpirienceSection from "./WorkExpirienceSection.astro";
 import Proyects from "./Proyects.astro";
+import SkillsSection from "./SkillsSection.astro";
 const { currentLocale } = Astro;
 
-const { INTRODUCCION_SECTION, EXPIRIENCE_SECTION, PROJECT_SECTION } =
-    getTranslations({
-        language: currentLocale,
-    });
+const {
+    INTRODUCCION_SECTION,
+    EXPIRIENCE_SECTION,
+    PROJECT_SECTION,
+    SKILLS_SECTION,
+} = getTranslations({
+    language: currentLocale,
+});
 ---
 
 <Layout
@@ -26,5 +31,6 @@ const { INTRODUCCION_SECTION, EXPIRIENCE_SECTION, PROJECT_SECTION } =
         <SkillLists />
         <WorkExpirienceSection content={EXPIRIENCE_SECTION} />
         <Proyects Content={PROJECT_SECTION} />
+        <SkillsSection Content={SKILLS_SECTION} />
     </main>
 </Layout>

@@ -1,0 +1,53 @@
+---
+import { hash } from "astro:schema";
+import { getSkillsIcon } from "../utils/getIcons";
+
+interface Props {
+    Content: {
+        title: string;
+        skills: { category: string; technologies: string[] }[];
+    };
+}
+const {
+    Content: { title, skills },
+} = Astro.props;
+
+const icons = getSkillsIcon();
+const hashMap = new Map();
+icons.forEach((icon) => hashMap.set(icon.skill, icon.src));
+---
+
+<section class="mx-5 sm:mx-20 md:mx-6 xl:mx-44 2xl:mx-72 mb-14">
+    <h2 class="text-4xl mb-6 font-extrabold">{title}</h2>
+    <div class="flex flex-wrap items-start justify-between">
+        {
+            skills.map((data) => {
+                return (
+                    <div>
+                        <h4 class="font-bold text-xl">{data.category}</h4>
+                        <div class="h-px w-full bg-white" />
+                        <ul>
+                            {data.technologies.map((tech) => {
+                                const logoSrc = tech
+                                    .replaceAll(" ", "_")
+                                    .toLowerCase();
+                                return (
+                                    <li class="flex items-center gap-1.5 px-4.5 py-1.5 ">
+                                        <img
+                                            src={hashMap.get(logoSrc)}
+                                            alt={`${tech} Logo`}
+                                            class="w-6 h-7 object-contain"
+                                        />
+                                        <span class="text-base font-medium">
+                                            {tech}
+                                        </span>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </div>
+                );
+            })
+        }
+    </div>
+</section>

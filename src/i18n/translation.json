@@ -232,9 +232,9 @@
             "JavaScript",
             "TypeScript",
             "React",
-            "React Router",
+            "React Router DOM",
             "Astro",
-            "Tailwind"
+            "Tailwind CSS"
           ]
         },
         {
@@ -248,8 +248,8 @@
           "category": "Data bases",
           "technologies": [
             "MySQL",
-            "PostgreSQL",
-            "MongoDB"
+            "Postgre SQL",
+            "Mongo"
           ]
         },
         {
@@ -269,7 +269,7 @@
           ]
         },
         {
-          "category": "Workflow",
+          "category": "Workflow & Tool",
           "technologies": [
             "Github",
             "Git",
