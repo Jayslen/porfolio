@@ -1,78 +1,5 @@
 {
   "es": {
-    "PROJECT_SECTION": {
-      "PROJECTS_SECTION_TITLE": "Projects.",
-      "PROJECTS": [
-        {
-          "title": "Latinoled.",
-          "description": "Latinoled is an exciting word game inspired by the popular game Wordle, but with a cultural twist that allows you to immerse yourself in the linguistic richness of Latin America. Players have the opportunity to choose the country they want to guess words from, which adds a unique and educational element to the game.",
-          "image": ["/latinoled.png", "/latinoled-2.png"],
-          "stack": ["react", "tailwind"],
-          "repository": "https://github.com/Jayslen/Latinoled",
-          "webSite": "https://latinoled.vercel.app/"
-        },
-        {
-          "title": "Real Madrid - Blog.",
-          "description": "Real Madrid is a news blog about the Real Madrid football team. The blog features a home page that displays the latest news and a details page that shows the full news. Users can click on a news to view more details and can click on a link to read the full news on the official Real Madrid website. The blog also features a contact page where users can send a message to the Real Madrid team.",
-          "image": ["/real-madrid.png", "/real-madrid-2.png"],
-          "stack": ["astro", "tailwind"],
-          "repository": "https://github.com/Jayslen/real-madrid-landing-page",
-          "webSite": "https://real-madrid-landing-page.vercel.app/"
-        },
-        {
-          "title": "Exams Generator.",
-          "description": "This web page is made with the purpose of helping students study for their exams. It has the functionality of generating questions from a text that the user provides and being able to save the generated questions that the user wants, where they are saved in a database in notion to be able to study it when they want like flashcards.",
-          "image": [
-            "/exam-generator-1.png",
-            "/exam-generator-2.png",
-            "/exam-generator-3.png",
-            "/exam-generator-4.png",
-            "/exam-generator-5.png"
-          ],
-          "stack": ["react", "reactRouter", "tailwind"],
-          "repository": "https://github.com/Jayslen/exams-generator"
-        },
-        {
-          "title": "Countries data explorer.",
-          "description": "The Country Info web application allows users to search and view information about countries around the world. This includes details such as population, region, capital, languages spoken, and more. The project is part of a Frontend Mentor challenge, which aims to help developers improve their skills through real-world projects.",
-          "image": ["/countries-data.png", "countries-data-2.png"],
-          "stack": ["astro", "react", "tailwind"],
-          "repository": "https://github.com/Jayslen/web-countries-data",
-          "webSite": "https://web-countries-data.vercel.app"
-        },
-        {
-          "title": "Books landing page",
-          "description": "In this landing page you will find my list of books, divided into sections of reading, completed and pending. In this landing you can view all these books and details of it with a subtle and simple design. This page was developed with astro and tailwind css and uses notion as a database to store the data.",
-          "image": [
-            "/landing-books-1.png",
-            "/landing-books-2.png",
-            "/landing-books-3.png",
-            "/landing-books-4.png"
-          ],
-          "stack": ["astro", "tailwind"],
-          "repository": "https://github.com/Jayslen/books-landing",
-          "webSite": "https://books-landing.vercel.app/"
-        },
-        {
-          "title": "Personal blog",
-          "description": "The purpose of this project is a a personal blog where you can write and publish articles. The blog is built with Node JS as the backend and uses Express JS as the framework. The frontend is built with EJS tempaltes. And it has basic authentication.",
-          "image": ["/personal-blog.png"],
-          "repository": "https://github.com/Jayslen/personal-blog-practice-project?tab=readme-ov-file",
-          "stack": ["nodeJs"]
-        },
-        {
-          "title": "Blogging Platform API",
-          "description": "This project is a blogging platform API built with Node.js and Express.js. It allows users to create, read, update, and delete blog posts. The API is designed to be RESTful and follows best practices for building APIs. It has multiples models like MongoDB, MySQL, and Local Storage.",
-          "image": ["/blogging-platform.png"],
-          "repository": "https://github.com/Jayslen/blogging-platform-API",
-          "stack": ["nodeJs"]
-        }
-      ]
-    },
-    "TECNOLOGIES_SECTION": {
-      "TITLE": "Technologies",
-      "PARAGRAPH": "These are some of the technologies that I have learned."
-    },
     "HEADER_SECTION": {
       "title": "Idioma a Español",
       "url": "/es"
@@ -96,82 +23,123 @@
           ]
         }
       ]
-    }
-  },
-  "en": {
+    },
     "PROJECT_SECTION": {
-      "PROJECTS_SECTION_TITLE": "Projects.",
-      "PROJECTS": [
+      "title": "Proyects",
+      "projects": [
         {
-          "title": "Latinoled.",
-          "description": "Latinoled is an exciting word game inspired by the popular game Wordle, but with a cultural twist that allows you to immerse yourself in the linguistic richness of Latin America. Players have the opportunity to choose the country they want to guess words from, which adds a unique and educational element to the game.",
-          "image": ["/latinoled.png", "/latinoled-2.png"],
-          "stack": ["react", "tailwind"],
-          "repository": "https://github.com/Jayslen/Latinoled",
-          "webSite": "https://latinoled.vercel.app/"
-        },
-        {
-          "title": "Real Madrid - Blog.",
-          "description": "Real Madrid is a news blog about the Real Madrid football team. The blog features a home page that displays the latest news and a details page that shows the full news. Users can click on a news to view more details and can click on a link to read the full news on the official Real Madrid website. The blog also features a contact page where users can send a message to the Real Madrid team.",
-          "image": ["/real-madrid.png", "/real-madrid-2.png"],
-          "stack": ["astro", "tailwind"],
-          "repository": "https://github.com/Jayslen/real-madrid-landing-page",
-          "webSite": "https://real-madrid-landing-page.vercel.app/"
-        },
-        {
-          "title": "Exams Generator.",
-          "description": "This web page is made with the purpose of helping students study for their exams. It has the functionality of generating questions from a text that the user provides and being able to save the generated questions that the user wants, where they are saved in a database in notion to be able to study it when they want like flashcards.",
-          "image": [
-            "/exam-generator-1.png",
-            "/exam-generator-2.png",
-            "/exam-generator-3.png",
-            "/exam-generator-4.png",
-            "/exam-generator-5.png"
+          "title": "Bmp Image Render",
+          "description": "A program which reads a BMP image, decodes, parses it, and renders the result directly in the console.",
+          "technologies": [
+            "Rust"
           ],
-          "stack": ["react", "reactRouter", "tailwind"],
-          "repository": "https://github.com/Jayslen/exams-generator"
+          "repository": "https://github.com/Jayslen/bmp-image-renderer"
         },
         {
-          "title": "Countries data explorer.",
-          "description": "The Country Info web application allows users to search and view information about countries around the world. This includes details such as population, region, capital, languages spoken, and more. The project is part of a Frontend Mentor challenge, which aims to help developers improve their skills through real-world projects.",
-          "image": ["/countries-data.png", "countries-data-2.png"],
-          "stack": ["astro", "react", "tailwind"],
-          "repository": "https://github.com/Jayslen/web-countries-data",
-          "webSite": "https://web-countries-data.vercel.app"
-        },
-        {
-          "title": "Books landing page",
-          "description": "In this landing page you will find my list of books, divided into sections of reading, completed and pending. In this landing you can view all these books and details of it with a subtle and simple design. This page was developed with astro and tailwind css and uses notion as a database to store the data.",
-          "image": [
-            "/landing-books-1.png",
-            "/landing-books-2.png",
-            "/landing-books-3.png",
-            "/landing-books-4.png"
+          "title": "Tic tac toe online",
+          "description": "A small project of the Tic Tac Toe game online, buiald with nodejs using web sockets",
+          "technologies": [
+            "React",
+            "Tailwind CSS",
+            "Node JS"
           ],
-          "stack": ["astro", "tailwind"],
-          "repository": "https://github.com/Jayslen/books-landing",
-          "webSite": "https://books-landing.vercel.app/"
+          "repository": "https://github.com/Jayslen/tic-tac-toe-online",
+          "site": "https://tic-tac-toe-online-gamma.vercel.app/"
         },
         {
-          "title": "Personal blog",
-          "description": "The purpose of this project is a a personal blog where you can write and publish articles. The blog is built with Node JS as the backend and uses Express JS as the framework. The frontend is built with EJS tempaltes. And it has basic authentication.",
-          "image": ["/personal-blog.png"],
-          "repository": "https://github.com/Jayslen/personal-blog-practice-project?tab=readme-ov-file",
-          "stack": ["nodeJs"]
+          "title": "Caching proxy server",
+          "description": "A caching proxy server which help you to save cache from a third-party-api",
+          "technologies": [
+            "Bun",
+            "Typescript"
+          ],
+          "repository": "https://github.com/Jayslen/caching-proxy-server"
         },
         {
-          "title": "Blogging Platform API",
-          "description": "This project is a blogging platform API built with Node.js and Express.js. It allows users to create, read, update, and delete blog posts. The API is designed to be RESTful and follows best practices for building APIs. It has multiples models like MongoDB, MySQL, and Local Storage.",
-          "image": ["/blogging-platform.png"],
-          "repository": "https://github.com/Jayslen/blogging-platform-API",
-          "stack": ["nodeJs"]
+          "title": "Latinoled",
+          "description": "Latinoled is an exciting word game inspired by the popular game Wordle, but with American Latin words",
+          "technologies": [
+            "React",
+            "Tailwind CSS"
+          ],
+          "repository": "https://latinoled.vercel.app/",
+          "site": "https://github.com/Jayslen/Latinoled"
+        },
+        {
+          "title": "Kanban Task Management App",
+          "description": "Full stack app that allows users to create and manage boards, columns, and tasks, with a clean interface.",
+          "technologies": [
+            "React",
+            "React Router Dom",
+            "Typescript",
+            "Tailwind CSS",
+            "Node JS",
+            "MySQL"
+          ],
+          "repository": "https://kanban-task-management-sigma-jade.vercel.app/",
+          "site": "https://github.com/Jayslen/Kanban-task-management"
         }
       ]
     },
-    "TECNOLOGIES_SECTION": {
-      "TITLE": "Technologies",
-      "PARAGRAPH": "These are some of the technologies that I have learned."
-    },
+    "SKILLS_SECTION": {
+      "title": "Skills",
+      "skills": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "React Router",
+            "Astro",
+            "Tailwind"
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            "Node JS",
+            "Bun"
+          ]
+        },
+        {
+          "category": "Data bases",
+          "technologies": [
+            "MySQL",
+            "PostgreSQL",
+            "MongoDB"
+          ]
+        },
+        {
+          "category": "Data & Automatizacion",
+          "technologies": [
+            "Power BI",
+            "Power Automate"
+          ]
+        },
+        {
+          "category": "Programming Languages",
+          "technologies": [
+            "JavaScript",
+            "TypeScript",
+            "Rust",
+            "Python"
+          ]
+        },
+        {
+          "category": "Workflow",
+          "technologies": [
+            "Github",
+            "Git",
+            "Figma"
+          ]
+        }
+      ]
+    }
+  },
+  "en": {
     "HEADER_SECTION": {
       "title": "Idioma a Español",
       "url": "/es"
@@ -192,6 +160,120 @@
             "Automated internal processes using Power Automate, reducing manual tasks and improving operational efficiency.",
             "Developed interactive dashboards in Power BI to support data analysis for the audit department.",
             "Performed data cleaning, transformation, and modeling to enable effective visualization and decision-making."
+          ]
+        }
+      ]
+    },
+    "PROJECT_SECTION": {
+      "title": "Projects",
+      "projects": [
+        {
+          "title": "Bmp Image Render",
+          "description": "A program which reads a BMP image, decodes, parses it, and renders the result directly in the console.",
+          "technologies": [
+            "Rust"
+          ],
+          "repository": "https://github.com/Jayslen/bmp-image-renderer"
+        },
+        {
+          "title": "Tic tac toe online",
+          "description": "A small project of the Tic Tac Toe game online, buiald with nodejs using web sockets",
+          "technologies": [
+            "React",
+            "Tailwind CSS",
+            "Node JS"
+          ],
+          "repository": "https://github.com/Jayslen/tic-tac-toe-online",
+          "site": "https://tic-tac-toe-online-gamma.vercel.app/"
+        },
+        {
+          "title": "Caching proxy server",
+          "description": "A caching proxy server which help you to save cache from a third-party-api",
+          "technologies": [
+            "Bun",
+            "Typescript"
+          ],
+          "repository": "https://github.com/Jayslen/caching-proxy-server"
+        },
+        {
+          "title": "Latinoled",
+          "description": "Latinoled is an exciting word game inspired by the popular game Wordle, but with American Latin words",
+          "technologies": [
+            "React",
+            "Tailwind CSS"
+          ],
+          "repository": "https://latinoled.vercel.app/",
+          "site": "https://github.com/Jayslen/Latinoled"
+        },
+        {
+          "title": "Kanban Task Management App",
+          "description": "Full stack app that allows users to create and manage boards, columns, and tasks, with a clean interface.",
+          "technologies": [
+            "React",
+            "React Router Dom",
+            "Typescript",
+            "Tailwind CSS",
+            "Node JS",
+            "MySQL"
+          ],
+          "repository": "https://kanban-task-management-sigma-jade.vercel.app/",
+          "site": "https://github.com/Jayslen/Kanban-task-management"
+        }
+      ]
+    },
+    "SKILLS_SECTION": {
+      "title": "Skills",
+      "skills": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "React Router",
+            "Astro",
+            "Tailwind"
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            "Node JS",
+            "Bun"
+          ]
+        },
+        {
+          "category": "Data bases",
+          "technologies": [
+            "MySQL",
+            "PostgreSQL",
+            "MongoDB"
+          ]
+        },
+        {
+          "category": "Data & Automatizacion",
+          "technologies": [
+            "Power BI",
+            "Power Automate"
+          ]
+        },
+        {
+          "category": "Programming Languages",
+          "technologies": [
+            "JavaScript",
+            "TypeScript",
+            "Rust",
+            "Python"
+          ]
+        },
+        {
+          "category": "Workflow",
+          "technologies": [
+            "Github",
+            "Git",
+            "Figma"
           ]
         }
       ]

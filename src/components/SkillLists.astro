@@ -2,17 +2,9 @@
 import TopWave from "../assets/TopWaves.svg";
 import BottomWave from "../assets/BottomWaves.svg";
 import Divider from "./Divider.astro";
-const matches = import.meta.glob("../assets/icons/*", {
-    eager: true,
-});
+import { getSkillsIcon } from "../utils/getIcons";
 
-const icons = Object.values(matches).map((i: any) => {
-    const path = i.default.src;
-    return {
-        src: path,
-        skill: path.split("/").at(-1).split(".png")[0],
-    };
-});
+const icons = getSkillsIcon();
 ---
 
 <section class="w-full overflow-hidden">

@@ -1,0 +1,67 @@
+---
+import { getSkillsIcon } from '../utils/getIcons';
+import LinkIcon from '../assets/Link.svg'
+
+interface Props {
+    Content: {
+        title: string;
+        projects: {
+            title: string;
+            description: string;
+            technologies: string[];
+            repository: string;
+            site?: string;
+        }[];
+    };
+}
+
+const icons = getSkillsIcon();
+const hashMap = new Map();
+icons.forEach((icon) => hashMap.set(icon.skill, icon.src));
+
+const {
+    Content: { title, projects },
+} = Astro.props;
+---
+
+<section class="mx-5 sm:mx-20 md:mx-6 xl:mx-44 2xl:mx-72 mb-14">
+    <h2 class="text-4xl mb-6 font-extrabold">{title}</h2>
+    <ul class="grid grid-cols-[repeat(auto-fit,minmax(420px,1fr))] gap-3 items-start">
+        {
+            projects.map((item) => {
+                return (
+                    <li class="flex flex-col p-2.5 rounded-[5px] bg-[#272727] h-auto self-start">
+                        <header class="flex items-center justify-between">
+                            {item.site ?
+                              <a href={item.site} target="blank" class="flex gap-1 items-center">
+                                <h4 class="font-bold">{item.title}</h4>
+                                    <LinkIcon/>
+                              </a> : <h4 class="font-bold">{item.title}</h4>
+                              }
+                            <a href={item.repository} target="blank">
+                                <img src={hashMap.get("github")} class="h-6" alt="Github logo"></img>
+                            </a>
+                        </header>
+                        <p>{item.description}</p>
+                        <ul class="flex flex-wrap gap-2">
+                            {item.technologies.map((tech) => {
+                            const skill = tech.replaceAll(' ', "_").toLowerCase()
+                            const iconSrc = hashMap.get(skill)
+                            return <li class="flex gap-2.5 items-center h-7 py-1 px-2.5 rounded-sm bg-[#00000057] italic ">
+                                <img src={iconSrc} class="h-4" alt=`${tech} Logo`></img>
+                                <span>{tech}</span>
+                            </li>
+                            })}
+                        </ul>
+                    </li>
+                );
+            })
+        }
+    </ul>
+</section>
+
+<style>
+   h2 + ul > li {
+        border: 0.5px solid #636363;
+    }
+</style>
