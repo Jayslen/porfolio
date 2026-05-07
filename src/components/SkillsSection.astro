@@ -1,6 +1,5 @@
 ---
-import { hash } from "astro:schema";
-import { getSkillsIcon } from "../utils/getIcons";
+import { getSkillsMap,slugify } from "../utils/getIcons";
 
 interface Props {
     Content: {
@@ -12,11 +11,8 @@ const {
     Content: { title, skills },
 } = Astro.props;
 
-const icons = getSkillsIcon();
-const hashMap = new Map();
-icons.forEach((icon) => {
-  hashMap.set(icon.skill.toLowerCase(), icon.src)
-});
+const hashMap = getSkillsMap();
+
 ---
 
 <section class="mx-5 sm:mx-20 md:mx-6 xl:mx-44 2xl:mx-72 mb-14">
@@ -30,13 +26,11 @@ icons.forEach((icon) => {
                         <div class="h-px w-full bg-white" />
                         <ul class="mt-2">
                             {data.technologies.map((tech) => {
-                                const logoSrc = tech
-                                    .replaceAll(" ", "_")
-                                    .toLowerCase();
+                            const iconSrc = hashMap.get(slugify(tech));
                                 return (
                                     <li class="flex items-center gap-2 px-4.5 py-1.5 hover:bg-[#272727] rounded-full transition-colors duration-200">
                                         <img
-                                            src={hashMap.get(logoSrc)}
+                                            src={iconSrc}
                                             alt={`${tech} Logo`}
                                             class="w-6 h-7 object-contain"
                                         />

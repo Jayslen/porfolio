@@ -14,3 +14,16 @@ export function getSkillsIcon() {
     };
   });
 }
+
+
+export const slugify = (name: string) =>
+  name.toLowerCase().replace(/\s+/g, '_');
+
+export const getSkillsMap = () => {
+  const icons = getSkillsIcon();
+  const map = new Map();
+  icons.forEach((icon) => {
+    map.set(slugify(icon.skill), icon.src);
+  });
+  return map;
+};

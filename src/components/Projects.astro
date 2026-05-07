@@ -1,5 +1,5 @@
 ---
-import { getSkillsIcon } from '../utils/getIcons';
+import { getSkillsMap, slugify } from '../utils/getIcons';
 import LinkIcon from '../assets/Link.svg'
 
 interface Props {
@@ -14,12 +14,7 @@ interface Props {
         }[];
     };
 }
-
-const icons = getSkillsIcon();
-const hashMap = new Map();
-icons.forEach((icon) => {
-  hashMap.set(icon.skill.toLowerCase(), icon.src)
-});
+const hashMap = getSkillsMap();
 const {
     Content: { title, projects },
 } = Astro.props;
@@ -27,11 +22,11 @@ const {
 
 <section class="mx-5 sm:mx-20 md:mx-6 xl:mx-44 2xl:mx-72 mb-14">
     <h2 class="text-4xl mb-6 font-extrabold">{title}</h2>
-    <ul class="grid grid-cols-[repeat(auto-fit,minmax(420px,1fr))] gap-3 items-start">
+    <ul class="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-3 ">
         {
             projects.map((item) => {
                 return (
-                    <li class="flex flex-col p-2.5 rounded-[5px] bg-[#272727] h-auto self-start hover:bg-[#00000057] group transition-colors duration-300">
+                    <li class="flex flex-col p-2.5 rounded-[5px] bg-[#272727] h-full self-start hover:bg-[#00000057] group transition-colors duration-300">
                         <header class="flex items-center justify-between">
                             {item.site ?
                               <a href={item.site} target="blank" class="flex gap-1 items-center group/link *:group-hover/link:text-[#BDCA58]">
@@ -52,8 +47,7 @@ const {
                         <p>{item.description}</p>
                         <ul class="flex flex-wrap gap-2">
                             {item.technologies.map((tech) => {
-                            const skill = tech.replaceAll(' ', "_").toLowerCase()
-                            const iconSrc = hashMap.get(skill)
+                            const iconSrc = hashMap.get(slugify(tech));
                             return <li class="flex gap-2.5 items-center h-7 py-1 px-2.5 rounded-sm bg-[#00000057] italic group-hover:bg-[#272727]">
                                 {iconSrc ? <img src={iconSrc} class="h-4" alt={`${tech} Logo`} /> : null}
                                 <span>{tech}</span>
