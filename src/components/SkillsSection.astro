@@ -26,13 +26,13 @@ icons.forEach((icon) => hashMap.set(icon.skill, icon.src));
                     <div>
                         <h4 class="font-bold text-xl">{data.category}</h4>
                         <div class="h-px w-full bg-white" />
-                        <ul>
+                        <ul class="mt-2">
                             {data.technologies.map((tech) => {
                                 const logoSrc = tech
                                     .replaceAll(" ", "_")
                                     .toLowerCase();
                                 return (
-                                    <li class="flex items-center gap-1.5 px-4.5 py-1.5 ">
+                                    <li class="flex items-center gap-2 px-4.5 py-1.5 hover:bg-[#272727] rounded-full transition-colors duration-200">
                                         <img
                                             src={hashMap.get(logoSrc)}
                                             alt={`${tech} Logo`}

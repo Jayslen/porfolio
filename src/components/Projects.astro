@@ -30,12 +30,12 @@ const {
         {
             projects.map((item) => {
                 return (
-                    <li class="flex flex-col p-2.5 rounded-[5px] bg-[#272727] h-auto self-start">
+                    <li class="flex flex-col p-2.5 rounded-[5px] bg-[#272727] h-auto self-start hover:bg-[#00000057] group transition-colors duration-300">
                         <header class="flex items-center justify-between">
                             {item.site ?
-                              <a href={item.site} target="blank" class="flex gap-1 items-center">
+                              <a href={item.site} target="blank" class="flex gap-1 items-center group/link *:group-hover/link:text-[#BDCA58]">
                                 <h4 class="font-bold">{item.title}</h4>
-                                    <LinkIcon/>
+                                    <LinkIcon class="text-current"/>
                               </a> : <h4 class="font-bold">{item.title}</h4>
                               }
                             <a href={item.repository} target="blank">
@@ -47,7 +47,7 @@ const {
                             {item.technologies.map((tech) => {
                             const skill = tech.replaceAll(' ', "_").toLowerCase()
                             const iconSrc = hashMap.get(skill)
-                            return <li class="flex gap-2.5 items-center h-7 py-1 px-2.5 rounded-sm bg-[#00000057] italic ">
+                            return <li class="flex gap-2.5 items-center h-7 py-1 px-2.5 rounded-sm bg-[#00000057] italic group-hover:bg-[#272727]">
                                 <img src={iconSrc} class="h-4" alt=`${tech} Logo`></img>
                                 <span>{tech}</span>
                             </li>

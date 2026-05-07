@@ -5,7 +5,7 @@ import HeroSsection from "./HeroSsection.astro";
 import { getTranslations } from "../i18n/i18n";
 import SkillLists from "./SkillLists.astro";
 import WorkExpirienceSection from "./WorkExpirienceSection.astro";
-import Proyects from "./Proyects.astro";
+import Projects from "./Projects.astro";
 import SkillsSection from "./SkillsSection.astro";
 import AboutMe from "./AboutMe.astro";
 const { currentLocale } = Astro;
@@ -28,12 +28,12 @@ const {
         : "My porfolio - Jayslen Rojas Serrano"}
     lang={currentLocale}
 >
-    <Header Content={HEADER_SECTION} />
+w    <!-- <Header Content={HEADER_SECTION} /> -->
     <main class="relative flex flex-col gap-20">
         <HeroSsection translation={INTRODUCCION_SECTION} />
         <SkillLists />
         <WorkExpirienceSection content={EXPIRIENCE_SECTION} />
-        <Proyects Content={PROJECT_SECTION} />
+        <Projects Content={PROJECT_SECTION} />
         <SkillsSection Content={SKILLS_SECTION} />
         <AboutMe Content={ABOUT_ME_SECTION} />
     </main></Layout
