@@ -1,0 +1,17 @@
+---
+interface Props {
+    Content: {
+        title: string;
+        description: string[];
+    };
+}
+
+const {
+    Content: { title, description },
+} = Astro.props;
+---
+
+<section class="mx-5 sm:mx-20 md:mx-6 xl:mx-44 2xl:mx-72 mb-14">
+    <h2 class="text-4xl mb-6 font-extrabold">{title}</h2>
+    {description.map((p) => <p>{p}</p>)}
+</section>

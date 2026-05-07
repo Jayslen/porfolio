@@ -1,43 +1,46 @@
 {
   "es": {
-    "HEADER_SECTION": {
-      "title": "Idioma a Español",
-      "url": "/es"
-    },
+    "HEADER_SECTION": [
+      "Intro",
+      "Experiencia laboral",
+      "Proyectos",
+      "Habilidades",
+      "Mas sobre mi"
+    ],
     "INTRODUCCION_SECTION": {
-      "SUB_TITLE": "Hey, I’m <strong>Jayslen Rojas Serrano</strong>",
-      "INTRODUCCION_SECTION_TITLE": "Software <strong>Developer</strong>",
-      "SHORT_DESCRIPTION": "Final-year Software Development student at ITLA, specialized in full-stack web development. Experience building modern applications using technologies such as React, TypeScript, Node.js, and more. Currently expanding my skill set by learning Rust and exploring high-performance software development.."
+      "SUB_TITLE": "Hola, soy <strong>Jayslen Rojas Serrano</strong>",
+      "INTRODUCCION_SECTION_TITLE": "Desarrollador de <strong>Software</strong>",
+      "SHORT_DESCRIPTION": "Estudiante de último año de Desarrollo de Software en ITLA, especializado en desarrollo web full-stack. Experiencia construyendo aplicaciones modernas utilizando tecnologías como React, TypeScript, Node.js y más. Actualmente ampliando mis habilidades aprendiendo Rust y explorando el desarrollo de software de alto rendimiento."
     },
     "EXPIRIENCE_SECTION": {
-      "TITLE": "Work Experience",
+      "TITLE": "Experiencia Laboral",
       "EXPERIENCE": [
         {
           "company": "Grupo Estrella",
-          "position": "Intern – Process Automation & Data Analysis",
-          "duration": "March 2026 – Present",
+          "position": "Pasante – Automatización de Procesos y Análisis de Datos",
+          "duration": "Marzo 2026 – Actualidad",
           "description": [
-            "Automated internal processes using Power Automate, reducing manual tasks and improving operational efficiency.",
-            "Developed interactive dashboards in Power BI to support data analysis for the audit department.",
-            "Performed data cleaning, transformation, and modeling to enable effective visualization and decision-making."
+            "Automatización de procesos internos utilizando Power Automate, reduciendo tareas manuales y mejorando la eficiencia operativa.",
+            "Desarrollo de dashboards interactivos en Power BI para apoyar el análisis de datos del departamento de auditoría.",
+            "Limpieza, transformación y modelado de datos para permitir una visualización y toma de decisiones efectiva."
           ]
         }
       ]
     },
     "PROJECT_SECTION": {
-      "title": "Proyects",
+      "title": "Proyectos",
       "projects": [
         {
-          "title": "Bmp Image Render",
-          "description": "A program which reads a BMP image, decodes, parses it, and renders the result directly in the console.",
+          "title": "Renderizador de Imágenes BMP",
+          "description": "Un programa que lee una imagen BMP, la decodifica, analiza y renderiza el resultado directamente en la consola.",
           "technologies": [
             "Rust"
           ],
           "repository": "https://github.com/Jayslen/bmp-image-renderer"
         },
         {
-          "title": "Tic tac toe online",
-          "description": "A small project of the Tic Tac Toe game online, buiald with nodejs using web sockets",
+          "title": "Tres en Raya Online",
+          "description": "Un pequeño proyecto del juego Tres en Raya online, construido con Node.js utilizando WebSockets.",
           "technologies": [
             "React",
             "Tailwind CSS",
@@ -47,8 +50,8 @@
           "site": "https://tic-tac-toe-online-gamma.vercel.app/"
         },
         {
-          "title": "Caching proxy server",
-          "description": "A caching proxy server which help you to save cache from a third-party-api",
+          "title": "Servidor Proxy con Caché",
+          "description": "Un servidor proxy con caché que ayuda a guardar caché de APIs de terceros.",
           "technologies": [
             "Bun",
             "Typescript"
@@ -57,7 +60,7 @@
         },
         {
           "title": "Latinoled",
-          "description": "Latinoled is an exciting word game inspired by the popular game Wordle, but with American Latin words",
+          "description": "Latinoled es un emocionante juego de palabras inspirado en el popular juego Wordle, pero con palabras latinoamericanas.",
           "technologies": [
             "React",
             "Tailwind CSS"
@@ -66,8 +69,8 @@
           "site": "https://github.com/Jayslen/Latinoled"
         },
         {
-          "title": "Kanban Task Management App",
-          "description": "Full stack app that allows users to create and manage boards, columns, and tasks, with a clean interface.",
+          "title": "Aplicación de Gestión de Tareas Kanban",
+          "description": "Aplicación full-stack que permite a los usuarios crear y administrar tableros, columnas y tareas con una interfaz limpia.",
           "technologies": [
             "React",
             "React Router Dom",
@@ -82,7 +85,7 @@
       ]
     },
     "SKILLS_SECTION": {
-      "title": "Skills",
+      "title": "Habilidades",
       "skills": [
         {
           "category": "Frontend",
@@ -92,9 +95,9 @@
             "JavaScript",
             "TypeScript",
             "React",
-            "React Router",
+            "React Router DOM",
             "Astro",
-            "Tailwind"
+            "Tailwind CSS"
           ]
         },
         {
@@ -105,22 +108,22 @@
           ]
         },
         {
-          "category": "Data bases",
+          "category": "Bases de Datos",
           "technologies": [
             "MySQL",
-            "PostgreSQL",
-            "MongoDB"
+            "Postgre SQL",
+            "Mongo"
           ]
         },
         {
-          "category": "Data & Automatizacion",
+          "category": "Datos y Automatización",
           "technologies": [
             "Power BI",
             "Power Automate"
           ]
         },
         {
-          "category": "Programming Languages",
+          "category": "Lenguajes de Programación",
           "technologies": [
             "JavaScript",
             "TypeScript",
@@ -129,7 +132,7 @@
           ]
         },
         {
-          "category": "Workflow",
+          "category": "Flujo de Trabajo y Herramientas",
           "technologies": [
             "Github",
             "Git",
@@ -137,13 +140,24 @@
           ]
         }
       ]
+    },
+    "ABOUT_ME_SECTION": {
+      "title": "Más Sobre Mí",
+      "description": [
+        "Desarrollador de software con enfoque en desarrollo web, especializado en la creación de aplicaciones modernas, rápidas y escalables. Trabajo principalmente en el desarrollo full-stack utilizando tecnologías como HTML, CSS, JavaScript, TypeScript, React, Astro y Tailwind CSS, construyendo interfaces intuitivas y responsivas.",
+        "En el backend, desarrollo APIs y servicios utilizando Node.js, Bun y bases de datos SQL y NoSQL como MongoDB. También cuento con experiencia en Rust, así como en herramientas de automatización y análisis como Power BI y Power Automate.",
+        "He desarrollado proyectos personales y académicos donde aplico buenas prácticas de desarrollo, control de versiones y testing. Me caracterizo por mi aprendizaje continuo, pensamiento lógico y enfoque en construir soluciones eficientes."
+      ]
     }
   },
   "en": {
-    "HEADER_SECTION": {
-      "title": "Idioma a Español",
-      "url": "/es"
-    },
+    "HEADER_SECTION": [
+      "Intro",
+      "Work Expirience",
+      "Projects",
+      "Skills",
+      "More about me"
+    ],
     "INTRODUCCION_SECTION": {
       "SUB_TITLE": "Hey, I’m <strong>Jayslen Rojas Serrano</strong>",
       "INTRODUCCION_SECTION_TITLE": "Software <strong>Developer</strong>",
@@ -276,6 +290,14 @@
             "Figma"
           ]
         }
+      ]
+    },
+    "ABOUT_ME_SECTION": {
+      "title": "More About Me",
+      "description": [
+        "Software developer with a focus on web development, specialized in building modern, fast, and scalable applications. I primarily work in full-stack development using technologies such as HTML, CSS, JavaScript, TypeScript, React, Astro, and Tailwind CSS, creating intuitive and responsive interfaces.",
+        "On the backend, I develop APIs and services using Node.js, Bun, and both SQL and NoSQL databases such as MongoDB. I also have experience with Rust, as well as automation and data analysis tools like Power BI and Power Automate.",
+        "I have developed personal and academic projects where I apply best development practices, version control, and testing. I am characterized by continuous learning, logical thinking, and a strong focus on building efficient solutions."
       ]
     }
   }

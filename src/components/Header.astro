@@ -1,25 +1,21 @@
 ---
+interface Props {
+    Content: string[];
+}
 const currentLocale = Astro.currentLocale;
-const title = currentLocale === "es" ? "Desarrollador Web" : "Web Developer";
-const { translation } = Astro.props;
+const { Content } = Astro.props;
 ---
 
 <nav
-    class="p-4 py-2 rounded-full bg-white/35 text-sm hover:bg-white/25 transition-colors fixed top-4 left-1/2 -translate-x-1/2 z-50"
+    class="fixed sm:mx-left md:left-6 xl:left-44 right:left-72 top-8 p-4 py-2 rounded-full bg-[#BDCA58]/90 text-black text-sm hover:bg-white/25 transition-colors z-50"
 >
     <ul class="flex gap-4">
-        <li>
-            <a href=""> Home </a>
-        </li>
-
-        <li>
-            <a href=""> Expirience </a>
-        </li>
-        <li>
-            <a href=""> Projects</a>
-        </li>
-        <a href="">
-            <li>About</li>
-        </a>
+        {
+            Content.map((item) => (
+                <li class="font-medium">
+                    <a href="">{item}</a>
+                </li>
+            ))
+        }
     </ul>
 </nav>
