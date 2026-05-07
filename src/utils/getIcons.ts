@@ -5,9 +5,12 @@ export function getSkillsIcon() {
 
   return Object.values(matches).map((i: any) => {
     const path = i.default.src;
+
+    const fileName = path.split("/").pop() || "";
+
     return {
       src: path,
-      skill: path.split("/").at(-1).split(".png")[0].toLowerCase(),
+      skill: fileName.replace(/\.[^/.]+$/, "").toLowerCase(),
     };
   });
 }
