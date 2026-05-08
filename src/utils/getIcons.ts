@@ -1,29 +1,4 @@
-export function getSkillsIcon() {
-  const matches = import.meta.glob("../assets/icons/*", {
-    eager: true,
-  });
+import type { ImageMetadata } from "astro";
 
-  return Object.values(matches).map((i: any) => {
-    const path = i.default.src;
-
-    const fileName = path.split("/").pop() || "";
-
-    return {
-      src: path,
-      skill: fileName.replace(/\.[^/.]+$/, "").toLowerCase(),
-    };
-  });
-}
-
-
-export const slugify = (name: string) =>
-  name.toLowerCase().replace(/\s+/g, '_');
-
-export const getSkillsMap = () => {
-  const icons = getSkillsIcon();
-  const map = new Map();
-  icons.forEach((icon) => {
-    map.set(slugify(icon.skill), icon.src);
-  });
-  return map;
-};
+export const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/icons/*.png');
+export const imagesList = Object.entries(images).map(v => v[0]);

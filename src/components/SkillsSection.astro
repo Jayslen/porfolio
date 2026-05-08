@@ -1,5 +1,7 @@
 ---
-import { getSkillsMap,slugify } from "../utils/getIcons";
+import { buildPathImage } from '../utils/buildIconSrc';
+import { images } from '../utils/getIcons'
+import { Image } from 'astro:assets';
 
 interface Props {
     Content: {
@@ -10,8 +12,6 @@ interface Props {
 const {
     Content: { title, skills },
 } = Astro.props;
-
-const hashMap = getSkillsMap();
 
 ---
 
@@ -26,11 +26,11 @@ const hashMap = getSkillsMap();
                         <div class="h-px w-full bg-white" />
                         <ul class="mt-2">
                             {data.technologies.map((tech) => {
-                            const iconSrc = hashMap.get(slugify(tech));
+                            const path = buildPathImage(tech);
                                 return (
                                     <li class="flex items-center gap-2 px-4.5 py-1.5 hover:bg-[#272727] rounded-full transition-colors duration-200">
-                                        <img
-                                            src={iconSrc}
+                                        <Image
+                                            src={path}
                                             alt={`${tech} Logo`}
                                             class="w-6 h-7 object-contain"
                                         />
