@@ -23,13 +23,13 @@ const {
 } = Astro.props;
 ---
 
-<section class="mx-5 sm:mx-20 md:mx-6 xl:mx-44 2xl:mx-72 mb-14">
+<section class="mx-5 sm:mx-20 md:mx-6 xl:mx-44 2xl:mx-72 mb-14 scroll-mt-28" id="projects">
     <h2 class="text-4xl mb-6 font-extrabold">{title}</h2>
-    <ul class="grid grid-cols-[repeat(auto-fit,minmax(420px,1fr))] gap-3 items-start">
+    <ul class="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-3">
         {
             projects.map((item) => {
                 return (
-                    <li class="flex flex-col p-2.5 rounded-[5px] bg-[#272727] h-full self-start hover:bg-[#00000057] group transition-colors duration-300">
+                    <li class="flex flex-col p-2.5 rounded-[5px] bg-[#272727] h-auto self-start hover:bg-[#00000057] group transition-colors duration-300">
                         <header class="flex items-center justify-between">
                             {item.site ?
                               <a href={item.site} target="blank" class="flex gap-1 items-center group/link *:">
@@ -40,7 +40,7 @@ const {
                             <a href={item.repository} target="blank">
                                 <Image src={images["/src/assets/icons/github.png"]()} class="w-6 object-center" alt="Github logo"></Image>
                             </a>
-                        </header>Vitest
+                        </header>
                         <p>{item.description}</p>
                         <ul class="flex flex-wrap gap-2">
                             {item.technologies.map((tech) => {

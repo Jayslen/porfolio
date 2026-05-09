@@ -1,11 +1,26 @@
 {
   "es": {
     "HEADER_SECTION": [
-      "Intro",
-      "Experiencia laboral",
-      "Proyectos",
-      "Habilidades",
-      "Mas sobre mi"
+      {
+        "value": "Intro",
+        "id": "intro"
+      },
+      {
+        "value": "Experiencia laboral",
+        "id": "work-experience"
+      },
+      {
+        "value": "Proyectos",
+        "id": "projects"
+      },
+      {
+        "value": "Habilidades",
+        "id": "skills"
+      },
+      {
+        "value": "Más sobre mí",
+        "id": "about-me"
+      }
     ],
     "INTRODUCCION_SECTION": {
       "SUB_TITLE": "Hola, soy <strong>Jayslen Rojas Serrano</strong>",
@@ -152,11 +167,26 @@
   },
   "en": {
     "HEADER_SECTION": [
-      "Intro",
-      "Work Expirience",
-      "Projects",
-      "Skills",
-      "More about me"
+      {
+        "value": "Intro",
+        "id": "intro"
+      },
+      {
+        "value": "Work Experience",
+        "id": "work-experience"
+      },
+      {
+        "value": "Projects",
+        "id": "projects"
+      },
+      {
+        "value": "Skills",
+        "id": "skills"
+      },
+      {
+        "value": "About me",
+        "id": "about-me"
+      }
     ],
     "INTRODUCCION_SECTION": {
       "SUB_TITLE": "Hey, I’m <strong>Jayslen Rojas Serrano</strong>",

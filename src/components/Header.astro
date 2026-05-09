@@ -1,6 +1,6 @@
 ---
 interface Props {
-    Content: string[];
+    Content: {value: string, id:string}[];
 }
 const currentLocale = Astro.currentLocale;
 const { Content } = Astro.props;
@@ -11,9 +11,9 @@ const { Content } = Astro.props;
 >
     <ul class="flex gap-4">
         {
-            Content.map((item) => (
-                <li class="font-medium">
-                    <a href="">{item}</a>
+            Content.map(({value,id}) => (
+                <li class="font-medium hover:text-white transition-colors">
+                    <a href={`#${id}`}>{value}</a>
                 </li>
             ))
         }
