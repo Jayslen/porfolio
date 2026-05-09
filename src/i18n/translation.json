@@ -47,7 +47,7 @@
       "projects": [
         {
           "title": "Renderizador de Imágenes BMP",
-          "description": "Un programa que lee una imagen BMP, la decodifica, analiza y renderiza el resultado directamente en la consola.",
+          "description": "Un programa que lee una imagen BMP, la decodifica y renderiza el resultado directamente en la consola.",
           "technologies": [
             "Rust"
           ],

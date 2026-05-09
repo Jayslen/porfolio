@@ -8,6 +8,7 @@ import WorkExpirienceSection from "./WorkExpirienceSection.astro";
 import Projects from "./Projects.astro";
 import SkillsSection from "./SkillsSection.astro";
 import AboutMe from "./AboutMe.astro";
+import Footer from "./Footer.astro";
 const { currentLocale } = Astro;
 
 const {
@@ -29,12 +30,13 @@ const {
     lang={currentLocale}
 >
    <Header Content={HEADER_SECTION} />
-    <main class="relative flex flex-col gap-20">
+    <main class="relative flex flex-col gap-16">
         <HeroSsection translation={INTRODUCCION_SECTION} />
         <SkillLists />
         <WorkExpirienceSection content={EXPIRIENCE_SECTION} />
         <Projects Content={PROJECT_SECTION} />
         <SkillsSection Content={SKILLS_SECTION} />
         <AboutMe Content={ABOUT_ME_SECTION} />
+        <Footer/>
     </main></Layout
 >
