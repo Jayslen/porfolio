@@ -54,6 +54,16 @@
           "repository": "https://github.com/Jayslen/bmp-image-renderer"
         },
         {
+          "title": "Sistema de Análisis de Ventas con ETL",
+          "description": "Proyecto ETL que extrae datos de diferentes fuentes, los transforma y los carga.",
+          "technologies": [
+            "Rust",
+            "Bun",
+            "Postgre SQL"
+          ],
+          "repository": "https://github.com/Jayslen/etl-sales-analytics"
+        },
+        {
           "title": "Tres en Raya Online",
           "description": "Un pequeño proyecto del juego Tres en Raya online, construido con Node.js utilizando WebSockets.",
           "technologies": [
@@ -80,8 +90,8 @@
             "React",
             "Tailwind CSS"
           ],
-          "repository": "https://latinoled.vercel.app/",
-          "site": "https://github.com/Jayslen/Latinoled"
+          "site": "https://latinoled.vercel.app/",
+          "repository": "https://github.com/Jayslen/Latinoled"
         },
         {
           "title": "Aplicación de Gestión de Tareas Kanban",
@@ -220,6 +230,16 @@
           "repository": "https://github.com/Jayslen/bmp-image-renderer"
         },
         {
+          "title": "Sales System Analytics with ETL",
+          "description": "ETL Project that extract data from different sources, transform and load it.",
+          "technologies": [
+            "Rust",
+            "Bun",
+            "Postgre SQL"
+          ],
+          "repository": "https://github.com/Jayslen/etl-sales-analytics"
+        },
+        {
           "title": "Tic tac toe online",
           "description": "A small project of the Tic Tac Toe game online, buiald with nodejs using web sockets",
           "technologies": [
@@ -246,8 +266,8 @@
             "React",
             "Tailwind CSS"
           ],
-          "repository": "https://latinoled.vercel.app/",
-          "site": "https://github.com/Jayslen/Latinoled"
+          "site": "https://latinoled.vercel.app/",
+          "repository": "https://github.com/Jayslen/Latinoled"
         },
         {
           "title": "Kanban Task Management App",
